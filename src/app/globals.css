@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-jakarta), var(--font-inter), system-ui, sans-serif;
+}
+
+@theme {
+  --color-ink: #0a1520;
+  --color-navy: #0f2136;
+  --color-navy-2: #16314d;
+  --color-navy-3: #1f4468;
+  --color-paper: #f8f6f1;
+  --color-paper-dim: #efeae1;
+  --color-copper: #c17a3f;
+  --color-copper-light: #e3a066;
+  --color-copper-dark: #93582a;
+  --color-mist: #66717d;
+  --color-line: #dcd6c9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.font-display {
+  font-weight: 700;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+}
+
+::selection {
+  background: var(--color-copper);
+  color: var(--color-paper);
+}
+
+/* ---------- shared motion utilities ---------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.94);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-scale {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ---------- hero ---------- */
+
+@keyframes gentleDrift {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1); }
+  50% { transform: translate3d(-1.5%, -1%, 0) scale(1.05); }
+}
+.drift {
+  animation: gentleDrift 22s ease-in-out infinite;
+}
+
+@keyframes ripple {
+  0% { transform: scale(0.6); opacity: 0.55; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+.ripple {
+  animation: ripple 3.6s cubic-bezier(0.2, 0.6, 0.4, 1) infinite;
+}
+
+/* ---------- buttons ---------- */
+
+.btn-copper {
+  background: var(--color-copper);
+  color: var(--color-paper);
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+.btn-copper:hover {
+  background: var(--color-copper-light);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(193, 122, 63, 0.35);
+}
+
+.btn-outline {
+  border: 1px solid rgba(248, 246, 241, 0.28);
+  color: rgba(248, 246, 241, 0.92);
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+.btn-outline:hover {
+  border-color: rgba(248, 246, 241, 0.6);
+  background: rgba(248, 246, 241, 0.08);
+  transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+  border: 1px solid rgba(10, 21, 32, 0.18);
+  color: var(--color-ink);
+  transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+.btn-outline-dark:hover {
+  border-color: rgba(10, 21, 32, 0.4);
+  background: rgba(10, 21, 32, 0.04);
+  transform: translateY(-2px);
+}
+
+/* ---------- timeline (approach section) ---------- */
+
+.timeline-track {
+  position: relative;
+}
+.timeline-line {
+  position: absolute;
+  background: var(--color-line);
+}
+.timeline-line-fill {
+  position: absolute;
+  background: linear-gradient(var(--color-copper), var(--color-copper-light));
+  transition: height 1.4s cubic-bezier(0.16, 1, 0.3, 1), width 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.timeline-dot {
+  transition: color 0.4s ease, transform 0.4s ease;
+}
+.timeline-dot.is-active {
+  transform: scale(1.15);
+}
+
+/* ---------- cards ---------- */
+
+.otter-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.otter-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(15, 33, 54, 0.08);
+  border-color: rgba(193, 122, 63, 0.35);
+}
+
+.ref-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.ref-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(15, 33, 54, 0.16);
+}
+
+/* ---------- price bars ---------- */
+
+.bar-fill {
+  transition: width 1.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ---------- misc ---------- */
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.grain {
+  background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 3px 3px;
+}
