@@ -4,11 +4,11 @@ import { useEffect, useState } from 'react'
 import LogoFull from './logo/LogoFull'
 
 const LINKS = [
-  { href: '#approche', label: 'Notre approche' },
-  { href: '#inclus', label: 'Ce qui est inclus' },
-  { href: '#tarifs', label: 'Tarifs' },
-  { href: '#references', label: 'Références' },
-  { href: '#manifeste', label: 'Manifeste' },
+  { href: '/#approche', label: 'Notre approche' },
+  { href: '/#inclus', label: 'Ce qui est inclus' },
+  { href: '/#tarifs', label: 'Tarifs' },
+  { href: '/#references', label: 'Références' },
+  { href: '/#manifeste', label: 'Manifeste' },
 ]
 
 export default function Navbar() {
@@ -32,7 +32,7 @@ export default function Navbar() {
       }}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-18" style={{ height: '76px' }}>
-        <a href="#top" className="flex items-center shrink-0">
+        <a href="/#top" className="flex items-center shrink-0">
           <LogoFull className="h-12 w-auto text-[var(--color-paper)]" />
         </a>
 
@@ -49,7 +49,7 @@ export default function Navbar() {
         </nav>
 
         <a
-          href="#contact"
+          href="/#contact"
           className="hidden md:inline-flex btn-copper text-sm font-medium px-5 py-2.5 rounded-full"
         >
           Démarrer mon projet
@@ -79,7 +79,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="/#contact"
             onClick={() => setOpen(false)}
             className="btn-copper text-sm font-medium px-5 py-3 rounded-full text-center"
           >

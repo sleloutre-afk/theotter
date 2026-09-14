@@ -1,15 +1,15 @@
 import LogoFull from './logo/LogoFull'
 
 const NAV_STUDIO = [
-  { href: '#approche', label: 'Notre approche' },
-  { href: '#inclus', label: 'Ce qui est inclus' },
-  { href: '#tarifs', label: 'Tarifs' },
+  { href: '/#approche', label: 'Notre approche' },
+  { href: '/#inclus', label: 'Ce qui est inclus' },
+  { href: '/#tarifs', label: 'Tarifs' },
 ]
 
 const NAV_MORE = [
-  { href: '#references', label: 'Références' },
-  { href: '#manifeste', label: 'Manifeste' },
-  { href: '#contact', label: 'Nous contacter' },
+  { href: '/#references', label: 'Références' },
+  { href: '/#manifeste', label: 'Manifeste' },
+  { href: '/#contact', label: 'Nous contacter' },
 ]
 
 export default function Footer() {
@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-6 pt-16 pb-10">
         <div className="grid sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
           <div className="lg:col-span-4">
-            <a href="#top">
+            <a href="/#top">
               <LogoFull className="h-7 w-auto text-[var(--color-paper)]" />
             </a>
             <p className="text-sm leading-relaxed mt-5 max-w-xs">
@@ -69,7 +69,7 @@ export default function Footer() {
                 145, rue Croix de Seguey<br />33000 Bordeaux
               </li>
               <li>
-                <a href="#contact" className="text-[var(--color-copper-light)] hover:text-[var(--color-copper)] transition-colors">
+                <a href="/#contact" className="text-[var(--color-copper-light)] hover:text-[var(--color-copper)] transition-colors">
                   Envoyer votre brief &rarr;
                 </a>
               </li>
