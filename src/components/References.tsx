@@ -53,8 +53,8 @@ export default function References() {
           <p className="text-[var(--color-mist)] leading-relaxed mt-5">
             Certains clients nous autorisent à partager leur nom, d&rsquo;autres
             préfèrent rester discrets. Dans ce cas, le projet est présenté
-            sans identification&nbsp;; nous vous montrons volontiers le détail
-            de la réalisation en échange.
+            sans identification&nbsp;; nous vous en montrons volontiers le
+            détail sur demande.
           </p>
         </div>
 
