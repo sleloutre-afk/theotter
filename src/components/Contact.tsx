@@ -31,7 +31,7 @@ export default function Contact() {
           </h2>
           <p className="text-[rgba(248,246,241,0.72)] leading-relaxed max-w-xl mx-auto mb-10">
             Pas de formulaire à rallonge. Un email ou un appel suffit pour
-            démarrer — nous revenons vers vous avec les premières questions
+            démarrer&nbsp;; nous revenons vers vous avec les premières questions
             dans la journée.
           </p>
 

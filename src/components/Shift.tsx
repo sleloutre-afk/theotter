@@ -45,7 +45,7 @@ export default function Shift() {
               Les prix d&rsquo;il y a un an ne sont plus justifiables.
             </h2>
             <p className="text-[rgba(248,246,241,0.72)] leading-relaxed mb-4">
-              Une loutre ouvre une coquille avec un simple galet — pas besoin d&rsquo;un
+              Une loutre ouvre une coquille avec un simple galet&nbsp;: pas besoin d&rsquo;un
               atelier entier. L&rsquo;IA fait la même chose au métier d&rsquo;agence&nbsp;:
               elle réduit à quelques heures ce qui prenait des semaines de
               réflexion stratégique, de maquettage, de rédaction et d&rsquo;allers-retours.
@@ -53,7 +53,7 @@ export default function Shift() {
             <p className="text-[rgba(248,246,241,0.72)] leading-relaxed">
               Les délais et les coûts de gestion de projet se sont effondrés.
               Continuer à facturer comme avant ne reflète plus la réalité du travail.
-              Nous avons choisi de construire nos prix sur cette nouvelle réalité —
+              Nous avons choisi de construire nos prix sur cette nouvelle réalité,
               pas sur l&rsquo;ancienne.
             </p>
           </div>
@@ -89,19 +89,28 @@ function BarRow({
   delay?: number
 }) {
   return (
-    <div className="flex items-center gap-4 mb-3 last:mb-0">
-      <span className="w-28 shrink-0 text-xs text-[rgba(248,246,241,0.55)]">{label}</span>
-      <div className="flex-1 h-8 rounded-full overflow-hidden" style={{ background: 'rgba(248,246,241,0.08)' }}>
-        <div
-          className="bar-fill h-full rounded-full flex items-center px-4"
-          style={{
-            width: isInView ? `${width}%` : '0%',
-            transitionDelay: `${delay}ms`,
-            background: tone === 'copper' ? 'linear-gradient(90deg, var(--color-copper), var(--color-copper-light))' : 'rgba(248,246,241,0.18)',
-          }}
-        />
+    <div className="mb-4 sm:mb-3 last:mb-0">
+      {/* Mobile: label + value sit above a full-width bar, so the bar has
+          room to actually show the size difference. Desktop keeps the
+          compact single-row layout. */}
+      <div className="flex sm:hidden items-baseline justify-between gap-3 mb-1.5">
+        <span className="text-xs text-[rgba(248,246,241,0.55)]">{label}</span>
+        <span className="text-xs text-[rgba(248,246,241,0.8)] text-right">{text}</span>
       </div>
-      <span className="w-40 shrink-0 text-xs text-[rgba(248,246,241,0.8)]">{text}</span>
+      <div className="flex items-center gap-4">
+        <span className="hidden sm:block w-28 shrink-0 text-xs text-[rgba(248,246,241,0.55)]">{label}</span>
+        <div className="flex-1 h-6 sm:h-8 rounded-full overflow-hidden" style={{ background: 'rgba(248,246,241,0.08)' }}>
+          <div
+            className="bar-fill h-full rounded-full flex items-center px-4"
+            style={{
+              width: isInView ? `${width}%` : '0%',
+              transitionDelay: `${delay}ms`,
+              background: tone === 'copper' ? 'linear-gradient(90deg, var(--color-copper), var(--color-copper-light))' : 'rgba(248,246,241,0.18)',
+            }}
+          />
+        </div>
+        <span className="hidden sm:block w-40 shrink-0 text-xs text-[rgba(248,246,241,0.8)]">{text}</span>
+      </div>
     </div>
   )
 }

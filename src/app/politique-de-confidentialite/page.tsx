@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function PolitiqueConfidentialite() {
   return (
     <>
-      <Navbar />
+      <Navbar solid />
       <main className="bg-[var(--color-paper)] pt-40 pb-24">
         <div className="max-w-3xl mx-auto px-6">
           <span className="text-xs uppercase tracking-[0.2em] text-[var(--color-copper-dark)]">
@@ -36,23 +36,50 @@ export default function PolitiqueConfidentialite() {
             <section>
               <h2 className="font-display text-lg text-[var(--color-ink)] mb-3">Données collectées</h2>
               <p>
-                Ce site ne dépose aucun cookie de mesure d&rsquo;audience ni
-                de traceur publicitaire. Les seules données personnelles
-                traitées sont celles que vous nous transmettez volontairement
+                D&rsquo;une part, celles que vous nous transmettez volontairement
                 lorsque vous nous contactez (par email ou par téléphone)&nbsp;:
                 nom, coordonnées, et contenu de votre message ou de votre
-                brief.
+                brief. D&rsquo;autre part, des données de navigation via des
+                cookies de mesure d&rsquo;audience et de publicité, uniquement
+                si vous les avez acceptés (voir ci-dessous).
+              </p>
+            </section>
+
+            <section>
+              <h2 className="font-display text-lg text-[var(--color-ink)] mb-3">Cookies utilisés</h2>
+              <p>
+                Aucun de ces cookies n&rsquo;est déposé avant que vous ayez donné
+                votre accord via le bandeau affiché à votre première visite.
+                Vous pouvez changer d&rsquo;avis à tout moment depuis la page{' '}
+                <a href="/gestion-cookies" className="text-[var(--color-copper-dark)] hover:underline">
+                  gestion des cookies
+                </a>.
+              </p>
+              <p className="mt-3">
+                <strong className="text-[var(--color-ink)]">Google Analytics</strong> (mesure
+                d&rsquo;audience)&nbsp;: nous aide à comprendre la fréquentation du
+                site et les pages consultées, avec adresse IP anonymisée.
+                Données conservées 13 mois maximum. Éditeur&nbsp;: Google Ireland
+                Limited.
+              </p>
+              <p className="mt-3">
+                <strong className="text-[var(--color-ink)]">Meta Pixel</strong> (publicité &amp;
+                reciblage)&nbsp;: nous permet de mesurer l&rsquo;efficacité de nos
+                campagnes publicitaires sur Facebook et Instagram. Éditeur&nbsp;:
+                Meta Platforms Ireland Limited.
               </p>
             </section>
 
             <section>
               <h2 className="font-display text-lg text-[var(--color-ink)] mb-3">Finalité et base légale</h2>
               <p>
-                Ces données sont utilisées exclusivement pour répondre à
-                votre demande, établir un devis et assurer le suivi de la
-                relation commerciale, sur la base de l&rsquo;exécution de
+                Vos données de contact sont utilisées exclusivement pour
+                répondre à votre demande, établir un devis et assurer le suivi
+                de la relation commerciale, sur la base de l&rsquo;exécution de
                 mesures précontractuelles prises à votre demande ou de notre
-                intérêt légitime à vous répondre.
+                intérêt légitime à vous répondre. Les cookies de mesure
+                d&rsquo;audience et de publicité reposent uniquement sur votre
+                consentement, que vous pouvez retirer à tout moment.
               </p>
             </section>
 
@@ -69,10 +96,11 @@ export default function PolitiqueConfidentialite() {
             <section>
               <h2 className="font-display text-lg text-[var(--color-ink)] mb-3">Destinataires</h2>
               <p>
-                Vos données ne sont ni vendues, ni cédées, ni transmises à
-                des tiers. Elles ne sont accessibles qu&rsquo;à The Otter, et
-                le cas échéant à ses prestataires techniques strictement
-                nécessaires à l&rsquo;hébergement du site.
+                Vos données ne sont ni vendues, ni cédées. Elles sont
+                accessibles à The Otter, à son hébergeur (Vercel), et, si vous
+                avez accepté les cookies correspondants, à Google et Meta dans
+                le cadre strict de la mesure d&rsquo;audience et de la publicité
+                décrites ci-dessus.
               </p>
             </section>
 
@@ -84,7 +112,9 @@ export default function PolitiqueConfidentialite() {
                 d&rsquo;être traitées aux États-Unis, dans le cadre des
                 garanties contractuelles mises en place par Vercel (clauses
                 contractuelles types de la Commission européenne) pour
-                assurer un niveau de protection adéquat de vos données.
+                assurer un niveau de protection adéquat de vos données. Il en
+                va de même pour Google et Meta si vous avez accepté leurs
+                cookies respectifs.
               </p>
             </section>
 
@@ -100,17 +130,20 @@ export default function PolitiqueConfidentialite() {
                 <a href="mailto:contact@theotter.fr" className="text-[var(--color-copper-dark)] hover:underline">
                   contact@theotter.fr
                 </a>. Vous disposez également du droit d&rsquo;introduire une
-                réclamation auprès de la CNIL (www.cnil.fr).
+                réclamation auprès de la CNIL (www.cnil.fr). Pour les cookies
+                spécifiquement, vous pouvez retirer votre consentement à tout
+                moment depuis la page{' '}
+                <a href="/gestion-cookies" className="text-[var(--color-copper-dark)] hover:underline">
+                  gestion des cookies
+                </a>.
               </p>
             </section>
 
             <section>
-              <h2 className="font-display text-lg text-[var(--color-ink)] mb-3">Évolution de cette politique</h2>
+              <h2 className="font-display text-lg text-[var(--color-ink)] mb-3">Mise à jour de cette politique</h2>
               <p>
-                Si des outils de mesure d&rsquo;audience ou des cookies
-                venaient à être ajoutés à ce site, cette politique serait mise
-                à jour en conséquence et un bandeau de consentement adapté
-                serait mis en place.
+                Cette politique peut évoluer, notamment si de nouveaux outils
+                étaient ajoutés au site. La version en ligne fait toujours foi.
               </p>
             </section>
           </div>

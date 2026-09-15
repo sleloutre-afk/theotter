@@ -5,12 +5,12 @@ import { useInView } from '@/lib/useInView'
 const ITEMS = [
   {
     title: 'Réflexion stratégique',
-    text: "Positionnement, cible, message clé, arborescence — la fondation qui évite de refaire le site dans six mois.",
+    text: "Positionnement, cible, message clé, arborescence. La fondation qui évite de refaire le site dans six mois.",
     icon: '/pictos/strategie.svg',
   },
   {
     title: 'Design & direction artistique',
-    text: 'Une identité visuelle cohérente, sur-mesure, pensée pour votre secteur — pas un template générique.',
+    text: 'Une identité visuelle cohérente, sur-mesure, pensée pour votre secteur, pas un template générique.',
     icon: '/pictos/design.svg',
   },
   {
@@ -20,12 +20,12 @@ const ITEMS = [
   },
   {
     title: 'UX au cordeau',
-    text: 'Parcours pensés pour convertir, pas seulement pour plaire — navigation, vitesse, accessibilité.',
+    text: 'Parcours pensés pour convertir, pas seulement pour plaire : navigation, vitesse, accessibilité.',
     icon: '/pictos/ux.svg',
   },
   {
     title: 'SEO technique & éditorial',
-    text: 'Structure indexable, balises, performances, contenus pensés pour être trouvés — dès la mise en ligne.',
+    text: 'Structure indexable, balises, performances, contenus pensés pour être trouvés, dès la mise en ligne.',
     icon: '/pictos/seo.svg',
   },
   {
@@ -46,7 +46,7 @@ export default function Included() {
             Tout est inclus
           </span>
           <h2 className="font-display text-3xl sm:text-4xl leading-tight mt-4 text-balance">
-            Un projet complet. Aucune ligne cachée, aucun module en option.
+            Un projet complet. Aucune ligne cachée.
           </h2>
         </div>
 

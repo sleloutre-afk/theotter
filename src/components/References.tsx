@@ -48,12 +48,12 @@ export default function References() {
             Références
           </span>
           <h2 className="font-display text-3xl sm:text-4xl leading-tight mt-4 text-balance">
-            Des projets réels, livrés en jours — pas en mois.
+            Des projets réels, livrés en jours, pas en mois.
           </h2>
           <p className="text-[var(--color-mist)] leading-relaxed mt-5">
             Certains clients nous autorisent à partager leur nom, d&rsquo;autres
             préfèrent rester discrets. Dans ce cas, le projet est présenté
-            sans identification&nbsp;— nous vous montrons volontiers le détail
+            sans identification&nbsp;; nous vous montrons volontiers le détail
             de la réalisation en échange.
           </p>
         </div>

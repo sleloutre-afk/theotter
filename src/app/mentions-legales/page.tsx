@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function MentionsLegales() {
   return (
     <>
-      <Navbar />
+      <Navbar solid />
       <main className="bg-[var(--color-paper)] pt-40 pb-24">
         <div className="max-w-3xl mx-auto px-6">
           <span className="text-xs uppercase tracking-[0.2em] text-[var(--color-copper-dark)]">
@@ -30,13 +30,13 @@ export default function MentionsLegales() {
                 situé 145, rue Croix de Seguey, 33000 Bordeaux, immatriculée
                 sous le numéro SIREN 531 395 580.
               </p>
-              <p className="mt-2">TVA non applicable — article 293 B du Code général des impôts.</p>
+              <p className="mt-2">TVA non applicable, article 293 B du Code général des impôts.</p>
               <p className="mt-2">
                 Directeur de la publication&nbsp;: Simon Leloutre.
               </p>
               <p className="mt-2">
                 Contact&nbsp;: <a href="mailto:contact@theotter.fr" className="text-[var(--color-copper-dark)] hover:underline">contact@theotter.fr</a>
-                {' '}— <a href="tel:+33660987394" className="text-[var(--color-copper-dark)] hover:underline">06 60 98 73 94</a>
+                {' '}/ <a href="tel:+33660987394" className="text-[var(--color-copper-dark)] hover:underline">06 60 98 73 94</a>
               </p>
             </section>
 
@@ -74,12 +74,17 @@ export default function MentionsLegales() {
             </section>
 
             <section>
-              <h2 className="font-display text-lg text-[var(--color-ink)] mb-3">Données personnelles</h2>
+              <h2 className="font-display text-lg text-[var(--color-ink)] mb-3">Données personnelles &amp; cookies</h2>
               <p>
-                Le traitement des données personnelles collectées via ce site
-                est détaillé dans notre{' '}
+                Le traitement des données personnelles collectées via ce site,
+                ainsi que l&rsquo;utilisation de cookies (Google Analytics, Meta
+                Pixel), sont détaillés dans notre{' '}
                 <a href="/politique-de-confidentialite" className="text-[var(--color-copper-dark)] hover:underline">
                   politique de confidentialité
+                </a>. Vous pouvez gérer vos préférences à tout moment depuis la
+                page{' '}
+                <a href="/gestion-cookies" className="text-[var(--color-copper-dark)] hover:underline">
+                  gestion des cookies
                 </a>.
               </p>
             </section>

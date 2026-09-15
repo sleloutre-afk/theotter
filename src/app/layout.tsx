@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter, Plus_Jakarta_Sans } from 'next/font/google'
+import CookieBanner from '@/components/CookieBanner'
+import AnalyticsScripts from '@/components/AnalyticsScripts'
 import './globals.css'
 
 const inter = Inter({
@@ -22,7 +24,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: 'The Otter — Studio digital propulsé par l\'IA',
   description:
-    "The Otter conçoit des sites et applications ultra premium — stratégie, design, contenu, UX, SEO — en quelques jours grâce à l'IA, pour 60 à 80 % moins cher qu'une agence classique. Tout vous appartient.",
+    "The Otter conçoit des sites et applications ultra premium (stratégie, design, contenu, UX, SEO) en quelques jours grâce à l'IA, pour 60 à 80 % moins cher qu'une agence classique. Tout vous appartient.",
   keywords: [
     'agence web IA',
     'création site internet IA',
@@ -92,6 +94,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         style={{ fontFamily: 'var(--font-sans)', margin: 0, padding: 0 }}
       >
         {children}
+        <CookieBanner />
+        <AnalyticsScripts />
       </body>
     </html>
   )

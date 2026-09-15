@@ -11,7 +11,7 @@ const LINKS = [
   { href: '/#manifeste', label: 'Manifeste' },
 ]
 
-export default function Navbar() {
+export default function Navbar({ solid = false }: { solid?: boolean }) {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
 
@@ -22,13 +22,19 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
+  // On pages without a dark hero behind it (legal pages), the navbar can't
+  // start transparent — there's nothing dark for the light logo/text to sit
+  // on, so it just disappears. `solid` keeps it permanently in its "scrolled"
+  // (opaque) look.
+  const opaque = solid || scrolled
+
   return (
     <header
       className="fixed top-0 inset-x-0 z-50 transition-all duration-300"
       style={{
-        background: scrolled ? 'rgba(10,21,32,0.86)' : 'transparent',
-        backdropFilter: scrolled ? 'blur(10px)' : 'none',
-        borderBottom: scrolled ? '1px solid rgba(248,246,241,0.08)' : '1px solid transparent',
+        background: opaque ? 'rgba(10,21,32,0.86)' : 'transparent',
+        backdropFilter: opaque ? 'blur(10px)' : 'none',
+        borderBottom: opaque ? '1px solid rgba(248,246,241,0.08)' : '1px solid transparent',
       }}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-18" style={{ height: '76px' }}>

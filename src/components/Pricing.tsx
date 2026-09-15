@@ -36,8 +36,8 @@ export default function Pricing() {
           </h2>
           <p className="text-[var(--color-mist)] leading-relaxed mt-5">
             Les tarifs d&rsquo;agence datent d&rsquo;une époque où un site premium
-            demandait deux mois de travail à cinq personnes. Ce temps a
-            disparu&nbsp;: nos prix aussi.
+            demandait deux mois de travail à cinq personnes. Ce temps est
+            révolu. Nos prix le reflètent.
           </p>
         </div>
 

@@ -14,7 +14,7 @@ const TRAITS = [
   },
   {
     title: 'Économe',
-    text: "Elle ne dépense que l'énergie nécessaire. Nous facturons le travail réellement produit — rien de plus.",
+    text: "Elle ne dépense que l'énergie nécessaire. Nous facturons le travail réellement produit, rien de plus.",
   },
 ]
 
@@ -49,7 +49,7 @@ export default function Story() {
             <p className="text-[rgba(248,246,241,0.72)] leading-relaxed mt-4">
               Nous ne sommes pas une agence qui a ajouté l&rsquo;IA à son offre.
               Nous sommes un studio no-code où la vraie compétence, c&rsquo;est de
-              savoir la manier avec discernement&nbsp;— l&rsquo;intelligence humaine,
+              savoir la manier avec discernement&nbsp;: l&rsquo;intelligence humaine,
               traduite par l&rsquo;intelligence artificielle. Nous cassons les{' '}
               <em className="italic text-[var(--color-copper-light)]">#codes</em>.
             </p>

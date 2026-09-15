@@ -85,6 +85,7 @@ export default function Footer() {
           <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             <a href="/mentions-legales" className="hover:text-[var(--color-paper)] transition-colors">Mentions légales</a>
             <a href="/politique-de-confidentialite" className="hover:text-[var(--color-paper)] transition-colors">Politique de confidentialité</a>
+            <a href="/gestion-cookies" className="hover:text-[var(--color-paper)] transition-colors">Gestion des cookies</a>
           </nav>
         </div>
       </div>

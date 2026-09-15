@@ -8,7 +8,7 @@ const STEPS = [
   {
     n: '01',
     title: 'Votre brief',
-    text: "Un échange, un document, quelques exemples — vous nous confiez votre projet tel qu'il est aujourd'hui, sans mise en forme préalable à préparer.",
+    text: "Un échange, un document, quelques exemples. Vous nous confiez votre projet tel qu'il est aujourd'hui, sans mise en forme préalable à préparer.",
   },
   {
     n: '02',
@@ -18,12 +18,12 @@ const STEPS = [
   {
     n: '03',
     title: 'Itérations ciblées',
-    text: "Vous nous renvoyez vos retours, nous ajustons — avec un seul interlocuteur du premier jour au dernier, aucune couche intermédiaire.",
+    text: "Vous nous renvoyez vos retours, nous ajustons, avec un seul interlocuteur du premier jour au dernier, aucune couche intermédiaire.",
   },
   {
     n: '04',
     title: 'Mise en ligne',
-    text: 'En moins de 7 jours, votre site est en ligne : optimisé, indexé, tracké — prêt à travailler pour vous.',
+    text: 'En moins de 7 jours, votre site est en ligne : optimisé, indexé, tracké, prêt à travailler pour vous.',
   },
 ]
 
