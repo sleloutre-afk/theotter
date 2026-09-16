@@ -51,7 +51,7 @@ export function renderConfirmationEmail({
                   Brief bien reçu
                 </span>
                 <h1 style="margin:0 0 16px;color:${COLORS.ink};font-size:22px;line-height:1.3;font-weight:700;">
-                  Merci ${escapeHtml(firstName)}, votre brief est bien arrivé.
+                  Merci ${escapeHtml(firstName)}, votre demande est bien arrivée.
                 </h1>
                 <p style="margin:0 0 24px;color:${COLORS.ink};font-size:14px;line-height:1.6;">
                   Nous revenons vers vous avec les premières questions sous 24h. Voici un
@@ -93,7 +93,7 @@ export function renderConfirmationEmail({
 </html>`
 
   const text = [
-    `Merci ${firstName}, votre brief est bien arrivé.`,
+    `Merci ${firstName}, votre demande est bien arrivée.`,
     '',
     'Nous revenons vers vous avec les premières questions sous 24h.',
     '',
