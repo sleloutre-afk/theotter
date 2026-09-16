@@ -153,7 +153,7 @@ export default function ContactModal({ isOpen, onClose }: { isOpen: boolean; onC
               </div>
               <h3 className="font-display text-lg text-[var(--color-ink)] mb-2">Merci, votre brief est bien reçu</h3>
               <p className="text-sm text-[var(--color-mist)] max-w-sm mx-auto">
-                Nous revenons vers vous avec les premières questions dans la journée.
+                Nous revenons vers vous avec les premières questions sous 24h.
               </p>
               <button onClick={onClose} className="mt-6 text-sm font-medium text-[var(--color-copper)] hover:text-[var(--color-copper-dark)] transition-colors">
                 Fermer

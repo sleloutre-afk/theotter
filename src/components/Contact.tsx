@@ -34,7 +34,7 @@ export default function Contact() {
           <p className="text-[rgba(248,246,241,0.72)] leading-relaxed max-w-xl mx-auto mb-10">
             Un formulaire simple, pas de tunnel interminable&nbsp;: quelques
             lignes suffisent pour démarrer. Nous revenons vers vous avec les
-            premières questions dans la journée.
+            premières questions sous 24h.
           </p>
 
           <ul className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 mb-10 text-sm text-[rgba(248,246,241,0.6)]">
