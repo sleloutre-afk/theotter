@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
+import { renderConfirmationEmail } from '@/lib/confirmationEmail'
 
 const MAX_FILE_SIZE = 4 * 1024 * 1024
 const ALLOWED_FILE_TYPES = ['application/pdf', 'image/jpeg', 'image/png']
@@ -95,6 +96,23 @@ export async function POST(request: Request) {
         .join('\n'),
       attachments,
     })
+
+    // Best-effort: the brief is already safely delivered above, so a failure
+    // here (e.g. visitor's mail server rejecting us) shouldn't surface as an
+    // error to them.
+    try {
+      const { html, text } = renderConfirmationEmail({ firstName, message, company, jobTitle })
+      await resend.emails.send({
+        from: 'The Otter <contact@theotter.fr>',
+        to: email,
+        subject: 'Votre brief est bien reçu — The Otter',
+        html,
+        text,
+      })
+    } catch (err) {
+      console.error('Contact form: failed to send confirmation email to visitor', err)
+    }
+
     return NextResponse.json({ ok: true })
   } catch (err) {
     console.error('Contact form: failed to send email', err)
