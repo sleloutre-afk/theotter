@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter, Plus_Jakarta_Sans } from 'next/font/google'
 import CookieBanner from '@/components/CookieBanner'
 import AnalyticsScripts from '@/components/AnalyticsScripts'
+import { ContactModalProvider } from '@/components/ContactModalProvider'
 import './globals.css'
 
 const inter = Inter({
@@ -93,7 +94,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         className={`${inter.variable} ${jakarta.variable}`}
         style={{ fontFamily: 'var(--font-sans)', margin: 0, padding: 0 }}
       >
-        {children}
+        <ContactModalProvider>
+          {children}
+        </ContactModalProvider>
         <CookieBanner />
         <AnalyticsScripts />
       </body>

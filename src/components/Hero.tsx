@@ -1,8 +1,11 @@
 'use client'
 
 import LogoMark from './logo/LogoMark'
+import { useContactModal } from './ContactModalProvider'
 
 export default function Hero() {
+  const { openModal } = useContactModal()
+
   return (
     <section id="top" className="relative min-h-screen flex flex-col text-[var(--color-paper)] overflow-hidden">
       {/* Background: drop your showreel at /public/videos/hero.mp4 — this element
@@ -60,9 +63,9 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-3">
-          <a href="#contact" className="btn-copper text-sm font-medium px-7 py-3.5 rounded-full w-full sm:w-auto">
+          <button onClick={openModal} className="btn-copper text-sm font-medium px-7 py-3.5 rounded-full w-full sm:w-auto">
             Démarrer mon projet
-          </a>
+          </button>
           <a href="#approche" className="btn-outline text-sm px-7 py-3.5 rounded-full w-full sm:w-auto">
             Voir notre approche
           </a>

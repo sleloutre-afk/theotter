@@ -1,4 +1,7 @@
+'use client'
+
 import LogoFull from './logo/LogoFull'
+import { useContactModal } from './ContactModalProvider'
 
 const NAV_STUDIO = [
   { href: '/#approche', label: 'Notre approche' },
@@ -9,10 +12,11 @@ const NAV_STUDIO = [
 const NAV_MORE = [
   { href: '/#references', label: 'Références' },
   { href: '/#manifeste', label: 'Manifeste' },
-  { href: '/#contact', label: 'Nous contacter' },
 ]
 
 export default function Footer() {
+  const { openModal } = useContactModal()
+
   return (
     <footer className="bg-[var(--color-ink)] text-[rgba(248,246,241,0.65)]">
       <div className="max-w-6xl mx-auto px-6 pt-16 pb-10">
@@ -51,6 +55,9 @@ export default function Footer() {
                   <a href={l.href} className="hover:text-[var(--color-paper)] transition-colors">{l.label}</a>
                 </li>
               ))}
+              <li>
+                <button onClick={openModal} className="hover:text-[var(--color-paper)] transition-colors">Nous contacter</button>
+              </li>
             </ul>
           </div>
 
@@ -69,9 +76,9 @@ export default function Footer() {
                 145, rue Croix de Seguey<br />33000 Bordeaux
               </li>
               <li>
-                <a href="/#contact" className="text-[var(--color-copper-light)] hover:text-[var(--color-copper)] transition-colors">
+                <button onClick={openModal} className="text-[var(--color-copper-light)] hover:text-[var(--color-copper)] transition-colors">
                   Envoyer votre brief &rarr;
-                </a>
+                </button>
               </li>
             </ul>
           </div>

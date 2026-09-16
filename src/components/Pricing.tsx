@@ -1,6 +1,7 @@
 'use client'
 
 import { useInView } from '@/lib/useInView'
+import { useContactModal } from './ContactModalProvider'
 
 const PILLARS = [
   {
@@ -23,6 +24,7 @@ const PILLARS = [
 
 export default function Pricing() {
   const { ref, isInView } = useInView<HTMLElement>({ threshold: 0.15 })
+  const { openModal } = useContactModal()
 
   return (
     <section id="tarifs" ref={ref} className="bg-[var(--color-paper)] py-24 sm:py-32">
@@ -68,9 +70,9 @@ export default function Pricing() {
           <p className="font-display text-xl sm:text-2xl text-balance text-center sm:text-left">
             Chaque projet est chiffré sur devis, en fonction de son périmètre réel.
           </p>
-          <a href="#contact" className="btn-copper text-sm font-medium px-7 py-3.5 rounded-full whitespace-nowrap">
+          <button onClick={openModal} className="btn-copper text-sm font-medium px-7 py-3.5 rounded-full whitespace-nowrap">
             Recevoir une estimation
-          </a>
+          </button>
         </div>
       </div>
     </section>

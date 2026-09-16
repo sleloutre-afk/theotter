@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import LogoFull from './logo/LogoFull'
+import { useContactModal } from './ContactModalProvider'
 
 const LINKS = [
   { href: '/#approche', label: 'Notre approche' },
@@ -14,6 +15,7 @@ const LINKS = [
 export default function Navbar({ solid = false }: { solid?: boolean }) {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const { openModal } = useContactModal()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24)
@@ -54,12 +56,12 @@ export default function Navbar({ solid = false }: { solid?: boolean }) {
           ))}
         </nav>
 
-        <a
-          href="/#contact"
+        <button
+          onClick={openModal}
           className="hidden md:inline-flex btn-copper text-sm font-medium px-5 py-2.5 rounded-full"
         >
           Démarrer mon projet
-        </a>
+        </button>
 
         <button
           aria-label="Ouvrir le menu"
@@ -84,13 +86,15 @@ export default function Navbar({ solid = false }: { solid?: boolean }) {
               {link.label}
             </a>
           ))}
-          <a
-            href="/#contact"
-            onClick={() => setOpen(false)}
+          <button
+            onClick={() => {
+              setOpen(false)
+              openModal()
+            }}
             className="btn-copper text-sm font-medium px-5 py-3 rounded-full text-center"
           >
             Démarrer mon projet
-          </a>
+          </button>
         </div>
       )}
     </header>

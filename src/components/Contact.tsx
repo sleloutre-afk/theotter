@@ -2,6 +2,7 @@
 
 import { useInView } from '@/lib/useInView'
 import LogoMark from './logo/LogoMark'
+import { useContactModal } from './ContactModalProvider'
 
 const BRIEF_POINTS = [
   'Le projet en une ou deux phrases',
@@ -11,6 +12,7 @@ const BRIEF_POINTS = [
 
 export default function Contact() {
   const { ref, isInView } = useInView<HTMLElement>({ threshold: 0.2 })
+  const { openModal } = useContactModal()
 
   return (
     <section id="contact" ref={ref} className="relative bg-[var(--color-ink)] text-[var(--color-paper)] py-24 sm:py-32 overflow-hidden">
@@ -30,9 +32,9 @@ export default function Contact() {
             Envoyez votre brief.<br />Recevez votre V0 sous 48h.
           </h2>
           <p className="text-[rgba(248,246,241,0.72)] leading-relaxed max-w-xl mx-auto mb-10">
-            Pas de formulaire à rallonge. Un email ou un appel suffit pour
-            démarrer&nbsp;; nous revenons vers vous avec les premières questions
-            dans la journée.
+            Un formulaire simple, pas de tunnel interminable&nbsp;: quelques
+            lignes suffisent pour démarrer. Nous revenons vers vous avec les
+            premières questions dans la journée.
           </p>
 
           <ul className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 mb-10 text-sm text-[rgba(248,246,241,0.6)]">
@@ -45,12 +47,12 @@ export default function Contact() {
           </ul>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a
-              href="mailto:contact@theotter.fr?subject=Mon%20projet%20avec%20The%20Otter"
+            <button
+              onClick={openModal}
               className="btn-copper inline-flex text-sm font-medium px-8 py-4 rounded-full w-full sm:w-auto justify-center"
             >
-              contact@theotter.fr
-            </a>
+              Envoyer mon brief
+            </button>
             <a
               href="tel:+33660987394"
               className="btn-outline inline-flex text-sm font-medium px-8 py-4 rounded-full w-full sm:w-auto justify-center"
