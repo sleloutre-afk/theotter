@@ -29,7 +29,7 @@ export default function Story() {
         <div className="grid md:grid-cols-12 gap-12 md:gap-10 items-start">
           <div className={`md:col-span-6 reveal ${isInView ? 'is-visible' : ''}`}>
             <span className="text-xs uppercase tracking-[0.2em] text-[var(--color-copper-light)]">
-              Pourquoi The Otter&nbsp;? Notre Manifeste
+              Notre Manifeste&nbsp;: Pourquoi The Otter
             </span>
             <h2 className="font-display text-3xl sm:text-4xl leading-tight mt-4 text-balance">
               La loutre est l&rsquo;un des rares mammifères à utiliser des outils.
