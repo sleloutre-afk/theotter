@@ -6,6 +6,7 @@ import LogoMark from './logo/LogoMark'
 type Status = 'idle' | 'sending' | 'sent' | 'error'
 
 const PHONE_HINT = 'Format attendu : 06 12 34 56 78 ou +33 6 12 34 56 78'
+const EMAIL_HINT = 'Adresse email invalide'
 const MAX_FILE_SIZE = 4 * 1024 * 1024
 const ALLOWED_FILE_TYPES = ['application/pdf', 'image/jpeg', 'image/png']
 const ALLOWED_FILE_EXTENSIONS = ['.pdf', '.jpg', '.jpeg', '.png']
@@ -13,6 +14,10 @@ const ALLOWED_FILE_EXTENSIONS = ['.pdf', '.jpg', '.jpeg', '.png']
 function isValidPhone(value: string) {
   const v = value.trim().replace(/\s+/g, '')
   return /^0\d{9}$/.test(v) || /^\+\d{7,15}$/.test(v)
+}
+
+function isValidEmail(value: string) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim())
 }
 
 function isAllowedFile(file: File) {
@@ -23,6 +28,7 @@ function isAllowedFile(file: File) {
 export default function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   const [status, setStatus] = useState<Status>('idle')
   const [phoneError, setPhoneError] = useState<string | null>(null)
+  const [emailError, setEmailError] = useState<string | null>(null)
   const [file, setFile] = useState<File | null>(null)
   const [fileError, setFileError] = useState<string | null>(null)
 
@@ -31,6 +37,7 @@ export default function ContactModal({ isOpen, onClose }: { isOpen: boolean; onC
       const t = setTimeout(() => {
         setStatus('idle')
         setPhoneError(null)
+        setEmailError(null)
         setFile(null)
         setFileError(null)
       }, 300)
@@ -76,11 +83,11 @@ export default function ContactModal({ isOpen, onClose }: { isOpen: boolean; onC
     const form = e.currentTarget
     const formData = new FormData(form)
 
-    if (!isValidPhone(String(formData.get('phone') || ''))) {
-      setPhoneError(PHONE_HINT)
-      return
-    }
-    setPhoneError(null)
+    const phoneOk = isValidPhone(String(formData.get('phone') || ''))
+    const emailOk = isValidEmail(String(formData.get('email') || ''))
+    setPhoneError(phoneOk ? null : PHONE_HINT)
+    setEmailError(emailOk ? null : EMAIL_HINT)
+    if (!phoneOk || !emailOk) return
 
     if (fileError) return
 
@@ -167,7 +174,14 @@ export default function ContactModal({ isOpen, onClose }: { isOpen: boolean; onC
                   <Field label="Nom" name="name" required />
                 </div>
                 <div className="grid grid-cols-2 gap-3">
-                  <Field label="Email" name="email" type="email" required />
+                  <Field
+                    label="Email"
+                    name="email"
+                    type="email"
+                    required
+                    error={emailError}
+                    onBlur={(e) => setEmailError(e.target.value && !isValidEmail(e.target.value) ? EMAIL_HINT : null)}
+                  />
                   <Field
                     label="Téléphone"
                     name="phone"

@@ -10,6 +10,10 @@ function isValidPhone(value: string) {
   return /^0\d{9}$/.test(v) || /^\+\d{7,15}$/.test(v)
 }
 
+function isValidEmail(value: string) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim())
+}
+
 function isAllowedFile(file: File) {
   const ext = '.' + (file.name.split('.').pop() ?? '').toLowerCase()
   return (ALLOWED_FILE_TYPES.includes(file.type) || ALLOWED_FILE_EXTENSIONS.includes(ext)) && file.size <= MAX_FILE_SIZE
@@ -39,6 +43,10 @@ export async function POST(request: Request) {
 
   if (!isValidPhone(phone)) {
     return NextResponse.json({ error: 'Numéro de téléphone invalide' }, { status: 400 })
+  }
+
+  if (!isValidEmail(email)) {
+    return NextResponse.json({ error: 'Adresse email invalide' }, { status: 400 })
   }
 
   let attachments: { filename: string; content: Buffer }[] | undefined
