@@ -1,16 +1,25 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
+function isValidPhone(value: string) {
+  const v = value.trim().replace(/\s+/g, '')
+  return /^0\d{9}$/.test(v) || /^\+\d{7,15}$/.test(v)
+}
+
 export async function POST(request: Request) {
-  const { name, email, phone, message, company } = await request.json()
+  const { firstName, name, email, phone, company, jobTitle, message, website } = await request.json()
 
   // Honeypot field filled in => bot. Pretend success without sending anything.
-  if (company) {
+  if (website) {
     return NextResponse.json({ ok: true })
   }
 
-  if (!name || !email || !message) {
+  if (!firstName || !name || !email || !phone || !message) {
     return NextResponse.json({ error: 'Champs manquants' }, { status: 400 })
+  }
+
+  if (!isValidPhone(phone)) {
+    return NextResponse.json({ error: 'Numéro de téléphone invalide' }, { status: 400 })
   }
 
   const apiKey = process.env.RESEND_API_KEY
@@ -18,9 +27,12 @@ export async function POST(request: Request) {
 
   if (!apiKey || !to) {
     console.error('Contact form: RESEND_API_KEY or CONTACT_TO_EMAIL is not set — brief not sent.', {
+      firstName,
       name,
       email,
       phone,
+      company,
+      jobTitle,
       message,
     })
     return NextResponse.json({ error: 'Service de contact non configuré' }, { status: 503 })
@@ -32,11 +44,14 @@ export async function POST(request: Request) {
       from: 'The Otter <brief@theotter.fr>',
       to,
       replyTo: email,
-      subject: `Nouveau brief — ${name}`,
+      subject: `Nouveau brief — ${firstName} ${name}`,
       text: [
+        `Prénom : ${firstName}`,
         `Nom : ${name}`,
         `Email : ${email}`,
-        phone ? `Téléphone : ${phone}` : null,
+        `Téléphone : ${phone}`,
+        company ? `Entreprise : ${company}` : null,
+        jobTitle ? `Fonction : ${jobTitle}` : null,
         '',
         message,
       ]

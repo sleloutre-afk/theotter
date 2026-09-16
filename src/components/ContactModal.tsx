@@ -5,12 +5,23 @@ import LogoMark from './logo/LogoMark'
 
 type Status = 'idle' | 'sending' | 'sent' | 'error'
 
+const PHONE_HINT = 'Format attendu : 06 12 34 56 78 ou +33 6 12 34 56 78'
+
+function isValidPhone(value: string) {
+  const v = value.trim().replace(/\s+/g, '')
+  return /^0\d{9}$/.test(v) || /^\+\d{7,15}$/.test(v)
+}
+
 export default function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   const [status, setStatus] = useState<Status>('idle')
+  const [phoneError, setPhoneError] = useState<string | null>(null)
 
   useEffect(() => {
     if (!isOpen) {
-      const t = setTimeout(() => setStatus('idle'), 300)
+      const t = setTimeout(() => {
+        setStatus('idle')
+        setPhoneError(null)
+      }, 300)
       return () => clearTimeout(t)
     }
     document.body.style.overflow = 'hidden'
@@ -31,12 +42,18 @@ export default function ContactModal({ isOpen, onClose }: { isOpen: boolean; onC
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    setStatus('sending')
     const form = e.currentTarget
     const data = Object.fromEntries(new FormData(form).entries())
 
+    if (!isValidPhone(String(data.phone || ''))) {
+      setPhoneError(PHONE_HINT)
+      return
+    }
+    setPhoneError(null)
+    setStatus('sending')
+
     // Honeypot: real visitors never fill this hidden field.
-    if (data.company) {
+    if (data.website) {
       setStatus('sent')
       return
     }
@@ -115,10 +132,24 @@ export default function ContactModal({ isOpen, onClose }: { isOpen: boolean; onC
 
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-2 gap-3">
+                  <Field label="Prénom" name="firstName" required />
                   <Field label="Nom" name="name" required />
-                  <Field label="Téléphone" name="phone" type="tel" />
                 </div>
-                <Field label="Email" name="email" type="email" required />
+                <div className="grid grid-cols-2 gap-3">
+                  <Field label="Email" name="email" type="email" required />
+                  <Field
+                    label="Téléphone"
+                    name="phone"
+                    type="tel"
+                    required
+                    error={phoneError}
+                    onBlur={(e) => setPhoneError(e.target.value && !isValidPhone(e.target.value) ? PHONE_HINT : null)}
+                  />
+                </div>
+                <div className="grid grid-cols-2 gap-3">
+                  <Field label="Entreprise" name="company" />
+                  <Field label="Fonction" name="jobTitle" />
+                </div>
                 <div>
                   <label className="block text-xs font-medium text-[var(--color-mist)] mb-1.5" htmlFor="message">
                     Votre brief
@@ -136,8 +167,8 @@ export default function ContactModal({ isOpen, onClose }: { isOpen: boolean; onC
                 {/* Honeypot — hidden from real visitors via CSS, invisible to
                     screen readers, but bots that fill every field trip it. */}
                 <div className="absolute -left-[9999px]" aria-hidden="true">
-                  <label htmlFor="company">Entreprise</label>
-                  <input id="company" name="company" type="text" tabIndex={-1} autoComplete="off" />
+                  <label htmlFor="website">Site web</label>
+                  <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
                 </div>
 
                 <button type="submit" disabled={status === 'sending'} className="btn-copper w-full text-sm font-medium py-3.5 rounded-full disabled:opacity-60">
@@ -167,11 +198,15 @@ function Field({
   name,
   type = 'text',
   required = false,
+  error,
+  onBlur,
 }: {
   label: string
   name: string
   type?: string
   required?: boolean
+  error?: string | null
+  onBlur?: (e: React.FocusEvent<HTMLInputElement>) => void
 }) {
   return (
     <div>
@@ -179,7 +214,8 @@ function Field({
         {label}
         {required && <span className="text-[var(--color-copper)]"> *</span>}
       </label>
-      <input id={name} name={name} type={type} required={required} className="input-field" />
+      <input id={name} name={name} type={type} required={required} onBlur={onBlur} className="input-field" />
+      {error && <p className="text-[11px] mt-1" style={{ color: '#b3462c' }}>{error}</p>}
     </div>
   )
 }
