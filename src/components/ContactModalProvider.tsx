@@ -2,6 +2,7 @@
 
 import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from 'react'
 import ContactModal from './ContactModal'
+import FloatingCTA from './FloatingCTA'
 
 type ContactModalContextValue = {
   isOpen: boolean
@@ -23,6 +24,7 @@ export function ContactModalProvider({ children }: { children: ReactNode }) {
     <ContactModalContext.Provider value={value}>
       {children}
       <ContactModal isOpen={isOpen} onClose={closeModal} />
+      <FloatingCTA />
     </ContactModalContext.Provider>
   )
 }
