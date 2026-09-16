@@ -6,21 +6,33 @@ import LogoMark from './logo/LogoMark'
 type Status = 'idle' | 'sending' | 'sent' | 'error'
 
 const PHONE_HINT = 'Format attendu : 06 12 34 56 78 ou +33 6 12 34 56 78'
+const MAX_FILE_SIZE = 4 * 1024 * 1024
+const ALLOWED_FILE_TYPES = ['application/pdf', 'image/jpeg', 'image/png']
+const ALLOWED_FILE_EXTENSIONS = ['.pdf', '.jpg', '.jpeg', '.png']
 
 function isValidPhone(value: string) {
   const v = value.trim().replace(/\s+/g, '')
   return /^0\d{9}$/.test(v) || /^\+\d{7,15}$/.test(v)
 }
 
+function isAllowedFile(file: File) {
+  const ext = '.' + (file.name.split('.').pop() ?? '').toLowerCase()
+  return (ALLOWED_FILE_TYPES.includes(file.type) || ALLOWED_FILE_EXTENSIONS.includes(ext)) && file.size <= MAX_FILE_SIZE
+}
+
 export default function ContactModal({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   const [status, setStatus] = useState<Status>('idle')
   const [phoneError, setPhoneError] = useState<string | null>(null)
+  const [file, setFile] = useState<File | null>(null)
+  const [fileError, setFileError] = useState<string | null>(null)
 
   useEffect(() => {
     if (!isOpen) {
       const t = setTimeout(() => {
         setStatus('idle')
         setPhoneError(null)
+        setFile(null)
+        setFileError(null)
       }, 300)
       return () => clearTimeout(t)
     }
@@ -40,33 +52,52 @@ export default function ContactModal({ isOpen, onClose }: { isOpen: boolean; onC
 
   if (!isOpen) return null
 
+  function handleFileChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const f = e.target.files?.[0] ?? null
+    if (!f) {
+      setFile(null)
+      setFileError(null)
+      return
+    }
+    if (!isAllowedFile(f)) {
+      setFile(null)
+      setFileError(
+        f.size > MAX_FILE_SIZE ? 'Fichier trop volumineux (4 Mo max)' : 'Format non accepté (PDF, JPG ou PNG uniquement)',
+      )
+      e.target.value = ''
+      return
+    }
+    setFileError(null)
+    setFile(f)
+  }
+
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     const form = e.currentTarget
-    const data = Object.fromEntries(new FormData(form).entries())
+    const formData = new FormData(form)
 
-    if (!isValidPhone(String(data.phone || ''))) {
+    if (!isValidPhone(String(formData.get('phone') || ''))) {
       setPhoneError(PHONE_HINT)
       return
     }
     setPhoneError(null)
+
+    if (fileError) return
+
     setStatus('sending')
 
     // Honeypot: real visitors never fill this hidden field.
-    if (data.website) {
+    if (formData.get('website')) {
       setStatus('sent')
       return
     }
 
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      })
+      const res = await fetch('/api/contact', { method: 'POST', body: formData })
       if (!res.ok) throw new Error('request failed')
       setStatus('sent')
       form.reset()
+      setFile(null)
     } catch {
       setStatus('error')
     }
@@ -149,6 +180,27 @@ export default function ContactModal({ isOpen, onClose }: { isOpen: boolean; onC
                 <div className="grid grid-cols-2 gap-3">
                   <Field label="Entreprise" name="company" />
                   <Field label="Fonction" name="jobTitle" />
+                </div>
+                <div>
+                  <label className="block text-xs font-medium text-[var(--color-mist)] mb-1.5" htmlFor="attachment">
+                    Pièce jointe{' '}
+                    <span className="font-normal">(optionnel, PDF/JPG/PNG, 4 Mo max)</span>
+                  </label>
+                  <input
+                    id="attachment"
+                    name="attachment"
+                    type="file"
+                    accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png"
+                    onChange={handleFileChange}
+                    className="input-field cursor-pointer file:mr-3 file:py-1.5 file:px-3 file:rounded-full file:border-0 file:text-xs file:font-medium file:cursor-pointer file:bg-[var(--color-paper-dim)] file:text-[var(--color-ink)]"
+                    style={{ colorScheme: 'light' }}
+                  />
+                  {file && !fileError && (
+                    <p className="text-[11px] text-[var(--color-mist)] mt-1">
+                      {file.name} ({(file.size / 1024 / 1024).toFixed(1)}&nbsp;Mo)
+                    </p>
+                  )}
+                  {fileError && <p className="text-[11px] mt-1" style={{ color: '#b3462c' }}>{fileError}</p>}
                 </div>
                 <div>
                   <label className="block text-xs font-medium text-[var(--color-mist)] mb-1.5" htmlFor="message">
