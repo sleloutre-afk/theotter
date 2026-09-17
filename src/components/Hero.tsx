@@ -59,7 +59,7 @@ export default function Hero() {
         <p className="text-balance max-w-2xl text-base sm:text-lg text-[rgba(248,246,241,0.78)] mb-11 leading-relaxed">
           The Otter conçoit vos sites et applications ultra premium (stratégie, design,
           contenu, UX, SEO) en quelques jours, voire quelques heures, pour
-          60 à 80&nbsp;% de moins qu&rsquo;une agence classique.
+          60 à 80&nbsp;% moins cher qu&rsquo;une agence web classique.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center gap-3">
