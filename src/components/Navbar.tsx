@@ -10,6 +10,7 @@ const LINKS = [
   { href: '/#tarifs', label: 'Tarifs' },
   { href: '/#references', label: 'Références' },
   { href: '/#manifeste', label: 'Manifeste' },
+  { href: '/#ressources', label: 'Ressources' },
 ]
 
 export default function Navbar({ solid = false }: { solid?: boolean }) {

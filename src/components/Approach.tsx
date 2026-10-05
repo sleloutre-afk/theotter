@@ -13,7 +13,7 @@ const STEPS = [
   {
     n: '02',
     title: 'V0 fonctionnelle sous 48h',
-    text: "Stratégie, architecture, design, premiers contenus : vous naviguez sur une vraie version de votre site, pas une maquette figée.",
+    text: "Stratégie, architecture, design, premiers contenus : vous naviguez sur une vraie version de votre site, pas une maquette figée.",
   },
   {
     n: '03',
@@ -23,7 +23,7 @@ const STEPS = [
   {
     n: '04',
     title: 'Mise en ligne',
-    text: 'En moins de 7 jours, votre site est en ligne : optimisé, indexé, tracké, prêt à travailler pour vous.',
+    text: 'En moins de 7 jours, votre site est en ligne : optimisé, indexé, tracké, prêt à travailler pour vous.',
   },
 ]
 

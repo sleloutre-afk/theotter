@@ -10,7 +10,7 @@ const TRAITS = [
   },
   {
     title: 'Outillée',
-    text: "Un galet pour une coquille, l'IA pour un site premium : le bon outil, au bon endroit, avec précision.",
+    text: "Un galet pour une coquille, l'IA pour un site premium : le bon outil, au bon endroit, avec précision.",
   },
   {
     title: 'Économe',
@@ -29,7 +29,7 @@ export default function Story() {
         <div className="grid md:grid-cols-12 gap-12 md:gap-10 items-start">
           <div className={`md:col-span-6 reveal ${isInView ? 'is-visible' : ''}`}>
             <span className="text-xs uppercase tracking-[0.2em] text-[var(--color-copper-light)]">
-              Notre Manifeste&nbsp;: Pourquoi The Otter
+              Notre Manifeste&nbsp;: Pourquoi TheOtter
             </span>
             <h2 className="font-display text-3xl sm:text-4xl leading-tight mt-4 text-balance">
               La loutre est l&rsquo;un des rares mammifères à utiliser des outils.

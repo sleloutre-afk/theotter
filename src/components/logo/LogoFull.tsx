@@ -14,7 +14,7 @@ export default function LogoFull({ className, style }: LogoProps) {
       className={className}
       style={style}
       role="img"
-      aria-label="The Otter"
+      aria-label="TheOtter"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
     >

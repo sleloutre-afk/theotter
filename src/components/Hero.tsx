@@ -57,7 +57,7 @@ export default function Hero() {
         </div>
 
         <p className="text-balance max-w-2xl text-base sm:text-lg text-[rgba(248,246,241,0.78)] mb-11 leading-relaxed">
-          The Otter conçoit vos sites et applications ultra premium (stratégie, design,
+          TheOtter conçoit vos sites et applications ultra premium (stratégie, design,
           contenu, UX, SEO) en quelques jours, voire quelques heures, pour
           60 à 80&nbsp;% moins cher qu&rsquo;une agence web classique.
         </p>

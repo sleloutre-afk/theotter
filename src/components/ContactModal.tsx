@@ -5,7 +5,7 @@ import LogoMark from './logo/LogoMark'
 
 type Status = 'idle' | 'sending' | 'sent' | 'error'
 
-const PHONE_HINT = 'Format attendu : 06 12 34 56 78 ou +33 6 12 34 56 78'
+const PHONE_HINT = 'Format attendu : 06 12 34 56 78 ou +33 6 12 34 56 78'
 const EMAIL_HINT = 'Adresse email invalide'
 const MAX_FILE_SIZE = 4 * 1024 * 1024
 const ALLOWED_FILE_TYPES = ['application/pdf', 'image/jpeg', 'image/png']
@@ -165,7 +165,7 @@ export default function ContactModal({ isOpen, onClose }: { isOpen: boolean; onC
                 Parlez-nous de votre projet
               </h3>
               <p className="text-sm text-[var(--color-mist)] mb-6">
-                Le projet, vos délais, des sites que vous aimez : quelques lignes suffisent pour démarrer.
+                Le projet, vos délais, des sites que vous aimez : quelques lignes suffisent pour démarrer.
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-4">

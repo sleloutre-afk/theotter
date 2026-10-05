@@ -17,7 +17,7 @@ const PILLARS = [
   },
   {
     title: 'Propriété totale, au terme du projet',
-    text: 'Code source, contenus, textes, images, vidéos : tout vous appartient et vous est remis dès le projet finalisé. Vous restez maître de votre site, même si un jour vous choisissez de nous quitter.',
+    text: 'Code source, contenus, textes, images, vidéos : tout vous appartient et vous est remis dès le projet finalisé. Vous restez maître de votre site, même si un jour vous choisissez de nous quitter.',
     icon: '/pictos/maitrise.svg',
   },
 ]

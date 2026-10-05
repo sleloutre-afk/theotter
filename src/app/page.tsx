@@ -7,10 +7,14 @@ import Included from '@/components/Included'
 import Pricing from '@/components/Pricing'
 import References from '@/components/References'
 import Story from '@/components/Story'
+import Resources from '@/components/Resources'
+import { getArticles } from '@/lib/articles'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
 export default function Home() {
+  const articles = getArticles()
+
   return (
     <>
       <Navbar />
@@ -23,6 +27,7 @@ export default function Home() {
         <Pricing />
         <References />
         <Story />
+        <Resources articles={articles} />
         <Contact />
       </main>
       <Footer />

@@ -15,12 +15,12 @@ const ITEMS = [
   },
   {
     title: 'Contenu complet',
-    text: 'Textes, articles, structure éditoriale, visuels et vidéos : le fond est écrit et produit, pas juste "à remplir".',
+    text: 'Textes, articles, structure éditoriale, visuels et vidéos : le fond est écrit et produit, pas juste "à remplir".',
     icon: '/pictos/contenu.svg',
   },
   {
     title: 'UX au cordeau',
-    text: 'Parcours pensés pour convertir, pas seulement pour plaire : navigation, vitesse, accessibilité.',
+    text: 'Parcours pensés pour convertir, pas seulement pour plaire : navigation, vitesse, accessibilité.',
     icon: '/pictos/ux.svg',
   },
   {
@@ -30,7 +30,7 @@ const ITEMS = [
   },
   {
     title: 'Analytics & tracking',
-    text: 'Google Analytics et Meta Pixel intégrés et configurés : vous pilotez dès le premier jour.',
+    text: 'Google Analytics et Meta Pixel intégrés et configurés : vous pilotez dès le premier jour.',
     icon: '/pictos/analytics.svg',
   },
 ]

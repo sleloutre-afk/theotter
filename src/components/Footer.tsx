@@ -12,6 +12,7 @@ const NAV_STUDIO = [
 const NAV_MORE = [
   { href: '/#references', label: 'Références' },
   { href: '/#manifeste', label: 'Manifeste' },
+  { href: '/ressources', label: 'Ressources' },
 ]
 
 export default function Footer() {
@@ -88,7 +89,7 @@ export default function Footer() {
           className="mt-14 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs"
           style={{ borderTop: '1px solid rgba(248,246,241,0.08)' }}
         >
-          <p>© {new Date().getFullYear()} The Otter. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} TheOtter. Tous droits réservés.</p>
           <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             <a href="/mentions-legales" className="hover:text-[var(--color-paper)] transition-colors">Mentions légales</a>
             <a href="/politique-de-confidentialite" className="hover:text-[var(--color-paper)] transition-colors">Politique de confidentialité</a>

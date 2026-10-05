@@ -3,8 +3,8 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Mentions légales — The Otter',
-  description: "Mentions légales du site theotter.fr, édité par The Otter.",
+  title: 'Mentions légales — TheOtter',
+  description: "Mentions légales du site theotter.fr, édité par TheOtter.",
   alternates: { canonical: 'https://theotter.fr/mentions-legales' },
 }
 
@@ -25,7 +25,7 @@ export default function MentionsLegales() {
             <section>
               <h2 className="font-display text-lg text-[var(--color-ink)] mb-3">Éditeur du site</h2>
               <p>
-                Le site theotter.fr est édité par <strong className="text-[var(--color-ink)]">The Otter</strong>,
+                Le site theotter.fr est édité par <strong className="text-[var(--color-ink)]">TheOtter</strong>,
                 entreprise individuelle de Simon Leloutre, dont le siège est
                 situé 145, rue Croix de Seguey, 33000 Bordeaux, immatriculée
                 sous le numéro SIREN 531 395 580.
@@ -53,7 +53,7 @@ export default function MentionsLegales() {
               <p>
                 L&rsquo;ensemble des contenus présents sur ce site (textes,
                 visuels, identité de marque, code source) est la propriété de
-                The Otter, sauf mention contraire. Toute reproduction ou
+                TheOtter, sauf mention contraire. Toute reproduction ou
                 représentation, totale ou partielle, sans autorisation
                 préalable est interdite.
               </p>

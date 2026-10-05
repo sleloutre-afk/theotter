@@ -4,7 +4,7 @@ import Footer from '@/components/Footer'
 import CookieToggles from './CookieToggles'
 
 export const metadata: Metadata = {
-  title: 'Gestion des cookies — The Otter',
+  title: 'Gestion des cookies — TheOtter',
   description: "Gérez vos préférences de cookies (Google Analytics, Meta Pixel) sur theotter.fr.",
   alternates: { canonical: 'https://theotter.fr/gestion-cookies' },
 }

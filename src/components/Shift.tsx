@@ -63,7 +63,7 @@ export default function Shift() {
               <div key={row.label} className={`reveal ${isInView ? 'is-visible' : ''}`} style={{ '--reveal-delay': `${i * 120}ms` } as React.CSSProperties}>
                 <p className="text-sm text-[rgba(248,246,241,0.55)] mb-3">{row.label}</p>
                 <BarRow label="Agence classique" text={row.before.text} width={row.before.width} isInView={isInView} tone="muted" />
-                <BarRow label="The Otter" text={row.after.text} width={row.after.width} isInView={isInView} tone="copper" delay={200} />
+                <BarRow label="TheOtter" text={row.after.text} width={row.after.width} isInView={isInView} tone="copper" delay={200} />
               </div>
             ))}
           </div>

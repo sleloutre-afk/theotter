@@ -78,7 +78,7 @@ export async function POST(request: Request) {
   try {
     const resend = new Resend(apiKey)
     await resend.emails.send({
-      from: 'The Otter <brief@theotter.fr>',
+      from: 'TheOtter <brief@theotter.fr>',
       to,
       replyTo: email,
       subject: `Nouveau brief — ${firstName} ${name}`,
@@ -103,9 +103,9 @@ export async function POST(request: Request) {
     try {
       const { html, text } = renderConfirmationEmail({ firstName, message, company, jobTitle })
       await resend.emails.send({
-        from: 'The Otter <contact@theotter.fr>',
+        from: 'TheOtter <contact@theotter.fr>',
         to: email,
-        subject: 'Votre brief est bien reçu — The Otter',
+        subject: 'Votre brief est bien reçu — TheOtter',
         html,
         text,
       })

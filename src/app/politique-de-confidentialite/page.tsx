@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Politique de confidentialité — The Otter',
+  title: 'Politique de confidentialité — TheOtter',
   description: "Politique de confidentialité et protection des données personnelles du site theotter.fr.",
   alternates: { canonical: 'https://theotter.fr/politique-de-confidentialite' },
 }
@@ -26,7 +26,7 @@ export default function PolitiqueConfidentialite() {
               <h2 className="font-display text-lg text-[var(--color-ink)] mb-3">Responsable du traitement</h2>
               <p>
                 Simon Leloutre, exerçant sous le nom commercial{' '}
-                <strong className="text-[var(--color-ink)]">The Otter</strong> (entreprise
+                <strong className="text-[var(--color-ink)]">TheOtter</strong> (entreprise
                 individuelle, SIREN 531 395 580, 145 rue Croix de Seguey,
                 33000 Bordeaux), est responsable du traitement des données
                 personnelles collectées via le site theotter.fr.
@@ -97,7 +97,7 @@ export default function PolitiqueConfidentialite() {
               <h2 className="font-display text-lg text-[var(--color-ink)] mb-3">Destinataires</h2>
               <p>
                 Vos données ne sont ni vendues, ni cédées. Elles sont
-                accessibles à The Otter, à son hébergeur (Vercel), et, si vous
+                accessibles à TheOtter, à son hébergeur (Vercel), et, si vous
                 avez accepté les cookies correspondants, à Google et Meta dans
                 le cadre strict de la mesure d&rsquo;audience et de la publicité
                 décrites ci-dessus.

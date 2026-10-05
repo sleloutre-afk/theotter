@@ -39,7 +39,7 @@ export function renderConfirmationEmail({
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;background:${COLORS.paper};border-radius:16px;overflow:hidden;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;">
             <tr>
               <td style="background:${COLORS.navy};padding:36px 40px;text-align:center;">
-                <img src="${LOGO_URL}" width="200" height="39" alt="The Otter" style="display:block;margin:0 auto;border:0;" />
+                <img src="${LOGO_URL}" width="200" height="39" alt="TheOtter" style="display:block;margin:0 auto;border:0;" />
               </td>
             </tr>
             <tr>
@@ -68,7 +68,7 @@ export function renderConfirmationEmail({
                   </tr>
                 </table>
                 <p style="margin:0 0 4px;color:${COLORS.ink};font-size:14px;line-height:1.6;">
-                  À très vite,<br /><strong>L&rsquo;équipe The Otter</strong>
+                  À très vite,<br /><strong>L&rsquo;équipe TheOtter</strong>
                 </p>
                 <a href="https://theotter.fr" style="color:${COLORS.copper};font-size:13px;text-decoration:underline;">
                   www.theotter.fr
@@ -81,7 +81,7 @@ export function renderConfirmationEmail({
                   contact@theotter.fr &middot; 06 60 98 73 94
                 </p>
                 <p style="margin:0;color:rgba(248,246,241,0.4);font-size:11px;">
-                  The Otter &middot; 145 rue Croix de Seguey, 33000 Bordeaux
+                  TheOtter &middot; 145 rue Croix de Seguey, 33000 Bordeaux
                 </p>
               </td>
             </tr>
@@ -103,7 +103,7 @@ export function renderConfirmationEmail({
     message,
     '',
     'À très vite,',
-    'L\'équipe The Otter',
+    'L\'équipe TheOtter',
     'www.theotter.fr',
     '',
     'contact@theotter.fr · 06 60 98 73 94',
