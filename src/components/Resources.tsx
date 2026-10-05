@@ -12,7 +12,7 @@ export default function Resources({ articles }: { articles: Article[] }) {
         <div className={`max-w-2xl mb-16 reveal ${isInView ? 'is-visible' : ''}`}>
           <span className="text-xs uppercase tracking-[0.2em] text-[var(--color-copper-dark)]">Ressources</span>
           <h2 className="font-display text-3xl sm:text-4xl leading-tight mt-4 text-balance">
-            Comprendre avant de construire.
+            Comprendre avant de se lancer.
           </h2>
           <p className="text-[var(--color-mist)] leading-relaxed mt-5">
             Coûts réels, propriété de votre site, règles par secteur : nos guides pour décider en connaissance de cause.

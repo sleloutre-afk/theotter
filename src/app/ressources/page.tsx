@@ -20,7 +20,7 @@ export default function Ressources() {
         <div className="max-w-6xl mx-auto px-6">
           <span className="text-xs uppercase tracking-[0.2em] text-[var(--color-copper-dark)]">Ressources</span>
           <h1 className="font-display text-3xl sm:text-4xl leading-tight mt-4 mb-4">
-            Comprendre avant de construire
+            Comprendre avant de se lancer
           </h1>
           <p className="text-[var(--color-mist)] leading-relaxed max-w-2xl mb-14">
             Des analyses concrètes, sourcées, sans jargon : coûts réels, propriété de votre site, règles par secteur.
