@@ -36,8 +36,23 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
   const article = getArticle(slug)
   if (!article) notFound()
 
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: article.title,
+    description: article.description,
+    image: `https://theotter.fr${article.image}`,
+    datePublished: article.date,
+    dateModified: article.date,
+    inLanguage: 'fr-FR',
+    author: { '@type': 'Organization', name: 'TheOtter', url: 'https://theotter.fr' },
+    publisher: { '@type': 'Organization', name: 'TheOtter', url: 'https://theotter.fr' },
+    mainEntityOfPage: `https://theotter.fr/ressources/${article.slug}`,
+  }
+
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <Navbar solid />
       <main className="bg-[var(--color-paper)] pt-40 pb-24">
         <article className="max-w-3xl mx-auto px-6">
