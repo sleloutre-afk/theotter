@@ -25,7 +25,7 @@ const CASES = [
     sector: 'Plateforme santé / medtech',
     focus: 'Application métier & espace pro',
     scope: ['Site vitrine', 'Back-office éditorial', 'Espace membres'],
-    delay: '6 jours',
+    delay: '20 jours',
     image: '/photos/medtech-web.jpg',
   },
   {
