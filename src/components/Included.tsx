@@ -58,7 +58,7 @@ export default function Included() {
               style={{ border: '1px solid var(--color-line)', '--reveal-delay': `${i * 90}ms` } as React.CSSProperties}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={item.icon} alt="" className="h-11 w-auto mb-5" />
+              <img src={item.icon} alt="" width={44} height={44} loading="lazy" className="h-11 w-auto mb-5" />
               <h3 className="font-display text-lg mb-2">{item.title}</h3>
               <p className="text-sm text-[var(--color-mist)] leading-relaxed">{item.text}</p>
             </div>

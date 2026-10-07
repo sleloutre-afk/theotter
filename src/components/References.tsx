@@ -74,6 +74,9 @@ export default function References() {
                   <img
                     src={c.image}
                     alt={isNamed ? `Aperçu du site ${c.name}` : 'Aperçu du projet (image floutée par confidentialité)'}
+                    width={900}
+                    height={562}
+                    loading="lazy"
                     className="w-full h-full object-cover object-top"
                   />
                   {!isNamed && (
@@ -81,6 +84,9 @@ export default function References() {
                     <img
                       src="/brand/theotter-confidentiel.png"
                       alt="Projet confidentiel"
+                      width={1234}
+                      height={479}
+                      loading="lazy"
                       className="absolute inset-0 m-auto h-16 w-auto opacity-95 pointer-events-none"
                     />
                   )}

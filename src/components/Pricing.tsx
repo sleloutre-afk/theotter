@@ -51,7 +51,7 @@ export default function Pricing() {
               style={{ '--reveal-delay': `${i * 120}ms` } as React.CSSProperties}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={p.icon} alt="" className="h-10 w-auto mb-5" />
+              <img src={p.icon} alt="" width={40} height={40} loading="lazy" className="h-10 w-auto mb-5" />
               <h3 className="font-display text-lg mb-2 text-balance">{p.title}</h3>
               <p className="text-sm text-[rgba(248,246,241,0.72)] leading-relaxed">{p.text}</p>
               {p.example && (

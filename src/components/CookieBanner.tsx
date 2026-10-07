@@ -43,9 +43,9 @@ export default function CookieBanner() {
       >
         <div className="hidden sm:flex shrink-0 items-center gap-2">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/pictos/cookie.svg" alt="" className="w-14 h-14 -rotate-12 -translate-y-2" />
+          <img src="/pictos/cookie.svg" alt="" width={56} height={56} loading="lazy" className="w-14 h-14 -rotate-12 -translate-y-2" />
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/pictos/cookie.svg" alt="" className="w-9 h-9 rotate-12 opacity-70 translate-y-2" />
+          <img src="/pictos/cookie.svg" alt="" width={36} height={36} loading="lazy" className="w-9 h-9 rotate-12 opacity-70 translate-y-2" />
         </div>
 
         <div className="flex-1 text-center sm:text-left">
