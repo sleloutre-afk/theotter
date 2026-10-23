@@ -167,6 +167,16 @@ body {
   box-shadow: 0 24px 48px rgba(15, 33, 54, 0.16);
 }
 
+/* ---------- carousel ---------- */
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* ---------- price bars ---------- */
 
 .bar-fill {
