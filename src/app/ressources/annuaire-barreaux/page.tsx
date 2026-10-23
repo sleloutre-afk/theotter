@@ -40,7 +40,9 @@ export default function AnnuaireBarreauxPage() {
             Aucune adresse n&rsquo;a été inventée. Les adresses non confirmées sur le site officiel du barreau
             lui-même n&rsquo;ont pas pu être reconfirmées de première main&nbsp;: vérifiez-les par téléphone avant un
             envoi important. Un barreau peut aussi avoir changé d&rsquo;adresse depuis la compilation&nbsp;: en cas de
-            doute, contactez directement votre Ordre.
+            doute, contactez directement votre Ordre. Pour certains barreaux, la communication préalable passe par
+            une rubrique dédiée de l&rsquo;extranet réservé aux avocats plutôt que par email&nbsp;: c&rsquo;est à
+            l&rsquo;avocat de vérifier auprès de son Ordre la marche à suivre exacte.
           </p>
 
           <a

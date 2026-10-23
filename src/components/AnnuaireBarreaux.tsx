@@ -68,7 +68,7 @@ export default function AnnuaireBarreaux({ rows }: { rows: Row[] }) {
                     {notFound ? (
                       <span className="text-[var(--color-mist)] italic">non trouvé</span>
                     ) : (
-                      <a href={`mailto:${r.email}`} className="text-[var(--color-copper-dark)] hover:underline">
+                      <a href={`mailto:${r.email.replace(/\s+/g, '')}`} className="text-[var(--color-copper-dark)] hover:underline">
                         {r.email}
                       </a>
                     )}

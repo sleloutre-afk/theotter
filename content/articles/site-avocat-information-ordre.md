@@ -25,7 +25,7 @@ Chaque barreau organise cette formalité à sa façon, mais le principe est part
 3. La commission vérifie la validité du nom de domaine, la présence des mentions obligatoires, et la conformité générale du contenu.
 4. Une fois le site jugé conforme, le cabinet reçoit une confirmation.
 
-Le point commun à tous les barreaux : un simple email au service de déontologie suffit pour engager la démarche. Ce n'est pas un dossier lourd, mais une formalité à ne pas oublier.
+Dans la plupart des barreaux, un simple email au service de déontologie suffit pour engager la démarche : ce n'est pas un dossier lourd, mais une formalité à ne pas oublier. Certains barreaux gèrent toutefois cette communication via une rubrique dédiée de l'extranet réservé aux avocats, plutôt que par email : vérifiez auprès de votre Ordre la marche à suivre exacte avant d'envoyer quoi que ce soit.
 
 Pour vous faire gagner du temps, nous avons compilé les adresses email à contacter pour les barreaux de France : consultez notre [annuaire des contacts déontologie des barreaux](/ressources/annuaire-barreaux). Certaines adresses n'ont pas pu être confirmées sur le site officiel du barreau concerné, vérifiez-les avant un envoi important.
 
