@@ -42,13 +42,20 @@ export default function AnnuaireBarreaux({ rows }: { rows: Row[] }) {
       </div>
 
       <div className="overflow-x-auto rounded-2xl" style={{ border: '1px solid var(--color-line)' }}>
-        <table className="w-full text-sm" style={{ borderCollapse: 'collapse' }}>
+        <table className="w-full min-w-[640px] text-sm" style={{ borderCollapse: 'collapse', tableLayout: 'fixed' }}>
+          <colgroup>
+            <col className="w-[14%]" />
+            <col className="w-[26%]" />
+            <col className="w-[20%]" />
+            <col className="w-[16%]" />
+            <col className="w-[24%]" />
+          </colgroup>
           <thead>
             <tr style={{ background: 'var(--color-navy)' }}>
-              <th className="text-left px-4 py-3 text-[var(--color-paper)] font-medium whitespace-nowrap">Barreau</th>
-              <th className="text-left px-4 py-3 text-[var(--color-paper)] font-medium whitespace-nowrap">Email</th>
+              <th className="text-left px-4 py-3 text-[var(--color-paper)] font-medium">Barreau</th>
+              <th className="text-left px-4 py-3 text-[var(--color-paper)] font-medium">Email</th>
               <th className="text-left px-4 py-3 text-[var(--color-paper)] font-medium">Type</th>
-              <th className="text-left px-4 py-3 text-[var(--color-paper)] font-medium whitespace-nowrap">Fiabilité</th>
+              <th className="text-left px-4 py-3 text-[var(--color-paper)] font-medium">Fiabilité</th>
               <th className="text-left px-4 py-3 text-[var(--color-paper)] font-medium">Source</th>
             </tr>
           </thead>
@@ -63,18 +70,18 @@ export default function AnnuaireBarreaux({ rows }: { rows: Row[] }) {
                     borderTop: '1px solid var(--color-line)',
                   }}
                 >
-                  <td className="px-4 py-3 font-medium text-[var(--color-ink)] whitespace-nowrap">{r.ville}</td>
-                  <td className="px-4 py-3 whitespace-nowrap">
+                  <td className="px-4 py-3 font-medium text-[var(--color-ink)]">{r.ville}</td>
+                  <td className="px-4 py-3 break-words">
                     {notFound ? (
                       <span className="text-[var(--color-mist)] italic">non trouvé</span>
                     ) : (
-                      <a href={`mailto:${r.email.replace(/\s+/g, '')}`} className="text-[var(--color-copper-dark)] hover:underline">
+                      <a href={`mailto:${r.email.replace(/\s+/g, '')}`} className="text-[var(--color-copper-dark)] hover:underline break-words">
                         {r.email}
                       </a>
                     )}
                   </td>
-                  <td className="px-4 py-3 text-[var(--color-mist)] min-w-[140px]">{r.type}</td>
-                  <td className="px-4 py-3 whitespace-nowrap">
+                  <td className="px-4 py-3 text-[var(--color-mist)]">{r.type}</td>
+                  <td className="px-4 py-3">
                     <span className="inline-flex items-center gap-1.5 text-[var(--color-mist)]">
                       <span
                         className="w-2 h-2 rounded-full shrink-0"
@@ -83,7 +90,22 @@ export default function AnnuaireBarreaux({ rows }: { rows: Row[] }) {
                       {r.fiabilite}
                     </span>
                   </td>
-                  <td className="px-4 py-3 text-[var(--color-mist)] text-xs max-w-sm">{r.source}</td>
+                  <td className="px-4 py-3 text-xs break-words">
+                    {r.source.startsWith('http') ? (
+                      <a
+                        href={r.source}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-[var(--color-copper-dark)] hover:underline"
+                      >
+                        {r.source}
+                      </a>
+                    ) : r.source ? (
+                      <span className="text-[var(--color-mist)]">{r.source}</span>
+                    ) : (
+                      <span className="text-[var(--color-mist)] italic">—</span>
+                    )}
+                  </td>
                 </tr>
               )
             })}
