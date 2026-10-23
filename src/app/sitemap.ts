@@ -16,6 +16,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     })),
     {
+      url: 'https://theotter.fr/ressources/annuaire-barreaux',
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.5,
+    },
+    {
       url: 'https://theotter.fr',
       lastModified: new Date(),
       changeFrequency: 'monthly',

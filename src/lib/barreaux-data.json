@@ -1,0 +1,1143 @@
+[
+  {
+    "ville": "Agen",
+    "email": "ordre@barreau-agen.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-agen.fr/contact.htm"
+  },
+  {
+    "ville": "Aix-en-Provence",
+    "email": "secretariatgeneral@barreauaix.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.conferencedesbatonniers.com/barreau/75"
+  },
+  {
+    "ville": "Ajaccio",
+    "email": "ordreavocats@barreau-ajaccio.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-ajaccio.fr/"
+  },
+  {
+    "ville": "Albertville",
+    "email": "contact@avocats-albertville.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-albertville.fr/contact"
+  },
+  {
+    "ville": "Albi",
+    "email": "contact@barreau-avocat-albi.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-avocat-albi.com/contact/"
+  },
+  {
+    "ville": "Alençon",
+    "email": "alencon@ordre-avocats.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-alencon.fr/"
+  },
+  {
+    "ville": "Alès",
+    "email": "barreau.ales@wanadoo.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-ales.fr/fr/contact.htm"
+  },
+  {
+    "ville": "Amiens",
+    "email": "contact@avocatsamiens.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/hauts-de-france/somme/bd70845b-1cfe-4636-8ed7-b70f072fea0f"
+  },
+  {
+    "ville": "Angers",
+    "email": "contact@barreau-angers.org",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.cours-appel.justice.fr/angers/avocats-barreaux"
+  },
+  {
+    "ville": "Angoulême (Charente)",
+    "email": "contact@avocats-charente.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-charente.com/infos-pratiques/contact.htm"
+  },
+  {
+    "ville": "Annecy",
+    "email": "accueil@barreau-annecy.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-annecy.com/mentions-legales/"
+  },
+  {
+    "ville": "Argentan",
+    "email": "barreau.argentan@wanadoo.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel (archive)",
+    "source": "http://web.archive.org/web/20260401061417/http://www.barreau-argentan.fr/"
+  },
+  {
+    "ville": "Arras",
+    "email": "ordre@avocatsarras.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://avocatsarras.com/contact-2/"
+  },
+  {
+    "ville": "Auch (Gers)",
+    "email": "barreau.gers@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-du-gers-ordre-avocats-32013-01.html"
+  },
+  {
+    "ville": "Aurillac / Cantal",
+    "email": "ordre-avocats15@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/auvergne-rhone-alpes/cantal/3bcc4d82-8d3c-44be-abf1-a7ac48b5c022"
+  },
+  {
+    "ville": "Auxerre",
+    "email": "ordre-des-avocats89@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-d-auxerre-ordre-avocats-89024-02.html"
+  },
+  {
+    "ville": "Avesnes-sur-Helpe",
+    "email": "barreau.avesnes@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-d-avesnes-sur-helpe-ordre-avocats-59036-01.html"
+  },
+  {
+    "ville": "Avignon",
+    "email": "ordredesavocatsavignon@barreau-avignon.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://barreau-avignon.avocat.fr/mentions-legales/"
+  },
+  {
+    "ville": "Bar-le-Duc / Meuse",
+    "email": "ordredesavocats@barreaumeuse.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.ordre-avocats-meuse.fr/"
+  },
+  {
+    "ville": "Bastia",
+    "email": "ordredesavocats@wanadoo.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-bastia.fr/contact/"
+  },
+  {
+    "ville": "Bayonne",
+    "email": "contact@avocats-bayonne.org",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.cours-appel.justice.fr/pau/les-avocats"
+  },
+  {
+    "ville": "Beauvais",
+    "email": "barreau@avocatsdebeauvais.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-beauvais.org/contact"
+  },
+  {
+    "ville": "Belfort",
+    "email": "ordre@avocats-belfort.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-belfort.com/"
+  },
+  {
+    "ville": "Bergerac-Sarlat",
+    "email": "contact@barreau-bergerac.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://avocat-bergerac-sarlat.com/"
+  },
+  {
+    "ville": "Besançon",
+    "email": "secretariat@avocats-besancon.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/bourgogne-franche-comte/doubs/6f218ff8-ca2a-45a3-a96c-e5a50d992c24"
+  },
+  {
+    "ville": "Béthune",
+    "email": "contact@barreaudebethune.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/hauts-de-france/pas-de-calais/6dc95cd3-984a-4a23-a8c2-3aae1afd9f82"
+  },
+  {
+    "ville": "Béziers",
+    "email": "ordre@avocats-beziers.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/occitanie/herault/96b40e22-b5f2-46ee-9476-98ee772246ca"
+  },
+  {
+    "ville": "Blois",
+    "email": "ordreavocatsblois@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/centre-val-de-loire/loir-et-cher/8c4c4708-d354-48c4-bfb0-8b090790cc4c"
+  },
+  {
+    "ville": "Bonneville et Pays du Montblanc",
+    "email": "contact@avocats-bonneville.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.ordre-avocats-bonneville.com/contact-barreau-bonneville-pays-mont-blanc/"
+  },
+  {
+    "ville": "Bordeaux",
+    "email": "contact@barreau-bordeaux.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-bordeaux.com/mentions-et-publications-legales/"
+  },
+  {
+    "ville": "Boulogne-sur-Mer",
+    "email": "ordre@avocats-boulogne.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/hauts-de-france/pas-de-calais/0e31e82a-668b-4823-a4d0-3bbe88c759e0"
+  },
+  {
+    "ville": "Bourg-en-Bresse (Ain)",
+    "email": "ordre@bourg-avocats.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/auvergne-rhone-alpes/ain/f18fd8a1-d04c-4e6d-9f73-cb298a315265"
+  },
+  {
+    "ville": "Bourges",
+    "email": "secretariat@ordre-avocats-bourges.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-bourges.com/contact/"
+  },
+  {
+    "ville": "Bourgoin-Jallieu",
+    "email": "ordre.avocats.bj@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.ordre-avocats-bourgoin-jallieu.com/contact-ordre-avocats-bourgoin-jallieu-isere-38/"
+  },
+  {
+    "ville": "Brest",
+    "email": "ordre.avocats@barreaudebrest.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-brest-ordre-avocats-29019-01.html"
+  },
+  {
+    "ville": "Briey",
+    "email": "barreau.briey@free.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-briey-ordre-avocats-54099-01.html"
+  },
+  {
+    "ville": "Brive",
+    "email": "barreaudebrive@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-brive-la-gaillarde-ordre-avocats-19031-01.html"
+  },
+  {
+    "ville": "Caen",
+    "email": "barreau@caen-avocats.net",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-caen.com/"
+  },
+  {
+    "ville": "Cahors (Lot)",
+    "email": "ordre@avocats46.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "Plaquette « Point Justice 2026 » (cahorsagglo.fr) ; source alternative avocats.lot@wanadoo.fr non confirmée"
+  },
+  {
+    "ville": "Cambrai",
+    "email": "contact@avocats-cambrai.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-cambrai.com/informations-pratiques.htm"
+  },
+  {
+    "ville": "Carcassonne",
+    "email": "secretariat@avocats-carcassonne.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-carcassonne.fr/"
+  },
+  {
+    "ville": "Carpentras",
+    "email": "contact@barreaudecarpentras.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreaudecarpentras.fr/le-barreau-de-carpentras/la-maison-de-l-avocat"
+  },
+  {
+    "ville": "Castres",
+    "email": "secretariat@avocats-castres.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://avocats-castres.fr/contact/"
+  },
+  {
+    "ville": "Cayenne (Guyane)",
+    "email": "barreauguyane@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/guyane/guyane/45c63917-3de5-4f92-bc70-d492bcac3f34"
+  },
+  {
+    "ville": "Chalon-sur-Saône",
+    "email": "avocats@avocats-chalonsursaone.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-chalon-sur-saone-ordre-avocats-71076-02.html"
+  },
+  {
+    "ville": "Châlons-en-Champagne",
+    "email": "contact@barreau-chalons.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-chalons-en-champagne-ordre-avocats-51108-01.html"
+  },
+  {
+    "ville": "Chambéry",
+    "email": "ordre@barreau-chambery.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-chambery-ordre-avocats-73065-01.html"
+  },
+  {
+    "ville": "Charleville-Mézières (Ardennes)",
+    "email": "avocats.des.ardennes@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-des-ardennes-ordre-avocats-08105-01.html"
+  },
+  {
+    "ville": "Chartres",
+    "email": "maisondesavocats.28@ordre28.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.conferencedesbatonniers.com/fr/la-conference/les-barreaux-et-ordres?page=5"
+  },
+  {
+    "ville": "Châteauroux",
+    "email": "ordre.avocats.chateauroux@wanadoo.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-chateauroux-ordre-avocats-36044-01.html"
+  },
+  {
+    "ville": "Chaumont (Haute-Marne)",
+    "email": "avocatshautemarne@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/grand-est/haute-marne/07d56fa4-7f74-4757-b624-1c4479f9b16f"
+  },
+  {
+    "ville": "Cherbourg",
+    "email": "cherbourg.avocats@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-cherbourg-ordre-avocats-50129-01.html"
+  },
+  {
+    "ville": "Clermont-Ferrand",
+    "email": "ordre@barreau-clermont.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-clermont.avocat.fr/"
+  },
+  {
+    "ville": "Colmar",
+    "email": "contact@ordre-avocats-colmar.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://barreau-colmar.fr/"
+  },
+  {
+    "ville": "Compiègne",
+    "email": "ordre@avocats-compiegne.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-compiegne-ordre-avocats-60159-01.html"
+  },
+  {
+    "ville": "Coutances-Avranches",
+    "email": "ordredesavocats@barreau-coutances-avranches.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-coutances-avranches-ordre-avocats-50147-01.html"
+  },
+  {
+    "ville": "Créteil (Val-de-Marne)",
+    "email": "avocats@ordre94.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-du-val-de-marne-ordre-avocats-94028-01.html"
+  },
+  {
+    "ville": "Cusset-Vichy",
+    "email": "avocats.vichycusset@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-cusset-vichy-ordre-avocats-03095-01.html"
+  },
+  {
+    "ville": "Dax",
+    "email": "contact@ordredesavocatsdedax.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.ordredesavocatsdedax.fr/fr/contact"
+  },
+  {
+    "ville": "Deux-Sèvres (Niort)",
+    "email": "contact@avocats-deux-sevres.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-deux-sevres.fr/"
+  },
+  {
+    "ville": "Dieppe",
+    "email": "avocats-dieppe@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-dieppe-ordre-avocats-76217-01.html"
+  },
+  {
+    "ville": "Digne-les-Bains",
+    "email": "ordre@avocats04.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://avocats04.fr/contact/"
+  },
+  {
+    "ville": "Dijon",
+    "email": "secretariatgeneral@barreaudijon.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.barreau-dijon.avocat.fr/contact/"
+  },
+  {
+    "ville": "Douai",
+    "email": "avocats.douai@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-douai-ordre-avocats-59178-01.html"
+  },
+  {
+    "ville": "Draguignan",
+    "email": "prisedecontact@avocazur.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocazur.com/fr/"
+  },
+  {
+    "ville": "Dunkerque",
+    "email": "ordre.avocats.dk@club-internet.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-dunkerque-ordre-avocats-59183-01.html"
+  },
+  {
+    "ville": "Épinal / Vosges",
+    "email": "secretariat@barreau-epinal.avocat.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/grand-est/vosges/b1a57b9a-75ff-4d80-8110-de8ebae8a89f"
+  },
+  {
+    "ville": "Évreux (Eure)",
+    "email": "ordre.avocats.evreux@wanadoo.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.conferencedesbatonniers.com/les-barreaux/?page=6"
+  },
+  {
+    "ville": "Évry (Essonne)",
+    "email": "batonnier@avocats91.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.conferencedesbatonniers.com/les-barreaux/?page=6"
+  },
+  {
+    "ville": "Foix (Ariège)",
+    "email": "ordre@ariege-avocats.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.ariege-avocats.fr/"
+  },
+  {
+    "ville": "Fontainebleau",
+    "email": "batonnier@avocats-fontainebleau.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://avocats-fontainebleau.fr/"
+  },
+  {
+    "ville": "Fort-de-France",
+    "email": "ordre@avocatsdemartinique.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-fort-de-france-ordre-avocats-97209-01.html"
+  },
+  {
+    "ville": "Gap (Hautes-Alpes)",
+    "email": "ordre@avocats-hautes-alpes.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-hautes-alpes.fr/"
+  },
+  {
+    "ville": "Grasse",
+    "email": "ordre@avocats-grasse.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-grasse.com/fr/barreau/batonnier"
+  },
+  {
+    "ville": "Grenoble",
+    "email": "ordre@avocats-grenoble.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://ordre-grenoble.avocat.fr/mentions-legales/"
+  },
+  {
+    "ville": "Guéret (Creuse)",
+    "email": "ordre@avocats-creuse.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/nouvelle-aquitaine/creuse/8b42ea18-798f-427d-8112-080d414e226c"
+  },
+  {
+    "ville": "La Roche-sur-Yon (Vendée)",
+    "email": "ordre@barreaudelarochesuryon.avocat.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-larochesuryon.com/"
+  },
+  {
+    "ville": "La Rochelle-Rochefort",
+    "email": "ordre@avocats-larochelle.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.conferencedesbatonniers.com/barreau/30"
+  },
+  {
+    "ville": "Laon",
+    "email": "contact@laon.carpafrance.org",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.conferencedesbatonniers.com/barreau/133 — à confirmer"
+  },
+  {
+    "ville": "Laval",
+    "email": "ordre@barreau-de-laval.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://barreau-de-laval.com/contact/"
+  },
+  {
+    "ville": "Le Havre",
+    "email": "ordreavocatslehavre@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-du-havre-ordre-avocats-76351-01.html"
+  },
+  {
+    "ville": "Le Mans",
+    "email": "contact@barreau-lemans.avocat.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://barreau-lemans.avocat.fr/"
+  },
+  {
+    "ville": "Le Puy-en-Velay (Haute-Loire)",
+    "email": "ordre-avocats-43@wanadoo.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/auvergne-rhone-alpes/haute-loire/63417881-cf17-41e0-bb92-d1b730113975"
+  },
+  {
+    "ville": "Les Sables d'Olonne",
+    "email": "ordre@barreaudessablesdolonne.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.conferencedesbatonniers.com/fr/la-conference/les-barreaux-et-ordres?page=8"
+  },
+  {
+    "ville": "Libourne",
+    "email": "secretariat@barreaulibourne.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreaulibourne.fr/"
+  },
+  {
+    "ville": "Lille",
+    "email": "secretariat.batonnier@avocats-lille.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.conferencedesbatonniers.com/barreau/134"
+  },
+  {
+    "ville": "Limoges",
+    "email": "ordre@barreau-limoges.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-limoges.org/contact.htm"
+  },
+  {
+    "ville": "Lisieux",
+    "email": "barreau.de.lisieux@wanadoo.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-lisieux-ordre-avocats-14366-01.html"
+  },
+  {
+    "ville": "Lons-le-Saunier (Jura)",
+    "email": "ordre@avocats-jura.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://avocats-jura.fr/"
+  },
+  {
+    "ville": "Lorient",
+    "email": "secretariat@barreaulorient.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreaulorient.fr/"
+  },
+  {
+    "ville": "Lyon",
+    "email": "contact@barreaulyon.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-lyon-ordre-avocats-69383-01.html"
+  },
+  {
+    "ville": "Mâcon",
+    "email": "contact@avocatsmacon.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://avocatsmacon.fr/"
+  },
+  {
+    "ville": "Mamoudzou (Mayotte)",
+    "email": "accueil@avocatsmayotte.org",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/mayotte/mayotte/fa0f247d-8b6e-4fe1-b9d1-8a3f421c22c2"
+  },
+  {
+    "ville": "Marseille",
+    "email": "sao@barreaumarseille.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-marseille.avocat.fr/notre-barreau/ — Cabinet du bâtonnier"
+  },
+  {
+    "ville": "Meaux",
+    "email": "contact@ordreavocats-meaux.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-meaux-ordre-avocats-77284-01.html"
+  },
+  {
+    "ville": "Melun",
+    "email": "barreau@barreau-melun.org",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.conferencedesbatonniers.com/barreau/94"
+  },
+  {
+    "ville": "Mende (Lozère)",
+    "email": "lebatonnier.lozere@gmail.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-lozere.fr/mentions-legales/"
+  },
+  {
+    "ville": "Metz",
+    "email": "secretariatbatonnier@ordre-avocats-metz.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.conferencedesbatonniers.com/barreau/64"
+  },
+  {
+    "ville": "Mont-de-Marsan",
+    "email": "contact@avocatsmdm.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-montdemarsan.org/"
+  },
+  {
+    "ville": "Montargis",
+    "email": "oda@avocatsmontargis.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://avocats-montargis.com/"
+  },
+  {
+    "ville": "Montbéliard",
+    "email": "barreaudemontbeliard@wanadoo.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-montbeliard-ordre-avocats-25388-01.html"
+  },
+  {
+    "ville": "Montluçon",
+    "email": "ordre@avocats-montlucon.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "signature officielle de l'Ordre (maires-allier.fr, lettre PDF)"
+  },
+  {
+    "ville": "Montpellier",
+    "email": "accueil@avocats-montpellier.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-montpellier-ordre-avocats-34172-01.html"
+  },
+  {
+    "ville": "Moulins",
+    "email": "ordre.avocats.moulins@wanadoo.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-moulins-ordre-avocats-03190-01.html"
+  },
+  {
+    "ville": "Mulhouse",
+    "email": "ordre@barreau-de-mulhouse.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel (ne répond pas aux emails, courrier AR recommandé)",
+    "source": "https://www.avocats-mulhouse.fr/politique-de-confidentialite.html"
+  },
+  {
+    "ville": "Nancy",
+    "email": "ordre@avocats-nancy.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-nancy-ordre-avocats-54395-01.html"
+  },
+  {
+    "ville": "Nanterre (Hauts-de-Seine)",
+    "email": "bra.nanterre@barreau92.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-des-hauts-de-seine-ordre-avocats-92050-01.html"
+  },
+  {
+    "ville": "Nantes",
+    "email": "accueil@barreaunantes.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreaunantes.fr/"
+  },
+  {
+    "ville": "Narbonne",
+    "email": "secretariat-batonnier@avocats-narbonne.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-narbonne.fr/contact"
+  },
+  {
+    "ville": "Nevers",
+    "email": "ordre@avocats-nevers.org",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-nevers.org/"
+  },
+  {
+    "ville": "Nice",
+    "email": "ordreavocats@barreaudenice.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-nice-ordre-avocats-06088-01.html"
+  },
+  {
+    "ville": "Nîmes",
+    "email": "contact@avocats-nimes.org",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-nimes-ordre-avocats-30189-01.html"
+  },
+  {
+    "ville": "Nouméa / Nouvelle-Calédonie",
+    "email": "barreau@barreau-noumea.nc",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.conferencedesbatonniers.com/fr/la-conference/les-barreaux-et-ordres?page=10"
+  },
+  {
+    "ville": "Orléans",
+    "email": "contact@ordre-avocats-orleans.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.ordre-avocats-orleans.fr/"
+  },
+  {
+    "ville": "Papeete (Tahiti)",
+    "email": "ordredesavocatstahiti@mail.pf",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "Liste des avocats inscrits, service-public.pf"
+  },
+  {
+    "ville": "Paris",
+    "email": "delegationgenerale@avocatparis.org",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocatparis.org/contacts/secretariat-general"
+  },
+  {
+    "ville": "Pau",
+    "email": "contact@avocats-pau.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://avocats-pau.fr/"
+  },
+  {
+    "ville": "Périgueux / Dordogne",
+    "email": "batonnier@barreau-perigueux.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.conferencedesbatonniers.com/fr/la-conference/les-barreaux-et-ordres?page=11"
+  },
+  {
+    "ville": "Perpignan",
+    "email": "ordre66@wanadoo.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-des-pyrenees-orientales-ordre-avocats-66136-01.html"
+  },
+  {
+    "ville": "Pointe-à-Pitre (Guadeloupe)",
+    "email": "ordre@barreau971.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/guadeloupe/guadeloupe/3a852126-084a-4ae4-9f6c-c5e95cb9f138"
+  },
+  {
+    "ville": "Poitiers",
+    "email": "contact@avocats-poitiers.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-poitiers.com/"
+  },
+  {
+    "ville": "Pontoise (Val-d'Oise)",
+    "email": "contact@avocat-95.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://avocat-95.fr/"
+  },
+  {
+    "ville": "Privas (Ardèche)",
+    "email": "barreauardeche@ordreavocats.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/auvergne-rhone-alpes/ardeche/f4ca37e7-7721-46fb-83f6-087362ab3811"
+  },
+  {
+    "ville": "Quimper",
+    "email": "contact@barreau-quimper.bzh",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://barreau-quimper.bzh/ (avocats-quimper.fr redirige vers ce domaine)"
+  },
+  {
+    "ville": "Reims",
+    "email": "accueil.mav@avocats-reims.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-reims.fr/fr/"
+  },
+  {
+    "ville": "Rennes",
+    "email": "communication@ordre-avocats-rennes.fr",
+    "type": "secrétariat général / communication",
+    "fiabilite": "site officiel",
+    "source": "https://www.ordre-avocats-rennes.fr/entreprises/devenir-partenaire"
+  },
+  {
+    "ville": "Roanne",
+    "email": "ordre@barreauderoanne.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreauderoanne.fr/"
+  },
+  {
+    "ville": "Rodez (Aveyron)",
+    "email": "contact@avocats-aveyron.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats12.com/"
+  },
+  {
+    "ville": "Rouen",
+    "email": "ordre@barreau-rouen.avocat.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-rouen.avocat.fr/contact/"
+  },
+  {
+    "ville": "Saint-Brieuc",
+    "email": "contact@avocats-saint-brieuc.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-saint-brieuc.fr/contact"
+  },
+  {
+    "ville": "Saint-Étienne",
+    "email": "ordre@avocat-saint-etienne.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocat-saint-etienne.com/"
+  },
+  {
+    "ville": "Saint-Gaudens",
+    "email": "ordre@avocats-saint-gaudens.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-saint-gaudens-ordre-avocats-31483-01.html — non confirmé sur le site officiel, site injoignable en HTTPS"
+  },
+  {
+    "ville": "Saint-Malo-Dinan",
+    "email": "gestion@bdsmd.eu",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-st-malo-dinan.fr/download-category/formation/"
+  },
+  {
+    "ville": "Saint-Nazaire",
+    "email": "contact@barreau-saintnazaire.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-saintnazaire.fr/contact/"
+  },
+  {
+    "ville": "Saint-Omer",
+    "email": "ordredesavocats.stomer@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-saint-omer-ordre-avocats-62765-01.html — adresse générique, non confirmée sur un site officiel du barreau"
+  },
+  {
+    "ville": "Saint-Pierre de la Réunion",
+    "email": "ordre.avocats-stpierre@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-saint-pierre-de-la-reunion-ordre-avocats-97416-01.html — non confirmé, site officiel barreau-saint-pierre-reunion.re inaccessible/sans contenu via l'outil"
+  },
+  {
+    "ville": "Saint-Quentin",
+    "email": "ordre.avocats.stq@wanadoo.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/permanence-juridique/ordre-des-avocats-de-saint-quentin-permanence-juridique-02691-02.html — non confirmé sur ordre-avocats-saintquentin.com, aucune adresse email visible sur le site"
+  },
+  {
+    "ville": "Saintes",
+    "email": "batonnier17@ordre-saintes.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-saintes-ordre-avocats-17415-01.html — site avocats-saintes.com inaccessible, certificat SSL invalide"
+  },
+  {
+    "ville": "Sarreguemines",
+    "email": "ordre.avocats.sarreguemines@wanadoo.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-sarreguemines-ordre-avocats-57631-01.html — adresse générique wanadoo, aucun site officiel identifié"
+  },
+  {
+    "ville": "Saumur",
+    "email": "ordre@barreau-saumur.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-saumur.fr/"
+  },
+  {
+    "ville": "Saverne",
+    "email": "ordre@avocats-saverne.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://avocats-saverne.com/"
+  },
+  {
+    "ville": "Seine-Saint-Denis (Bobigny)",
+    "email": "avocats@avocats-bobigny.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-bobigny.com/le-barreau/le-barreau-de-seine-saint-denis/les-services-de-lordre-et-de-la-carpa-ef/"
+  },
+  {
+    "ville": "Senlis",
+    "email": "contact@barreau-senlis.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.conferencedesbatonniers.com/fr/la-conference/les-barreaux-et-ordres?page=12"
+  },
+  {
+    "ville": "Sens",
+    "email": "ordreavocats.sens@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-sens-ordre-avocats-89387-01.html — adresse générique, aucun site officiel identifié"
+  },
+  {
+    "ville": "Soissons",
+    "email": "contact@avocats-soisson.com",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-soissons-ordre-avocats-02722-01.html — non confirmé, aucun site officiel accessible"
+  },
+  {
+    "ville": "Strasbourg",
+    "email": "contact@ordre-avocats-strasbourg.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-strasbourg.com/"
+  },
+  {
+    "ville": "Tarascon",
+    "email": "ordre@avocats-tarascon.com",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.maussanelesalpilles.fr/wp-content/uploads/2026/05/Modalites-consultations-gratuites.pdf — site avocats-tarascon.com inaccessible, certificat SSL invalide"
+  },
+  {
+    "ville": "Tarbes",
+    "email": "contact@avocats-tarbes.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.cours-appel.justice.fr/pau/les-avocats — non confirmé sur le site officiel, aucune adresse email visible dans le contenu récupéré"
+  },
+  {
+    "ville": "Tarn-et-Garonne (Montauban)",
+    "email": "contact@avocats-tarnetgaronne.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-du-tarn-et-garonne-ordre-avocats-82121-01.html — non confirmé, site officiel redirige vers une page sans contenu accessible"
+  },
+  {
+    "ville": "Thionville",
+    "email": "ordre@avocats-thionville.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-thionville.fr/"
+  },
+  {
+    "ville": "Thonon-les-Bains",
+    "email": "contact.ordre@barreau-thonon.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreau-thonon.fr/"
+  },
+  {
+    "ville": "Toulon",
+    "email": "ordreavocats@barreau-toulon.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://barreautoulon.fr/contact/"
+  },
+  {
+    "ville": "Toulouse",
+    "email": "communication@ordre-avocats-toulouse.fr",
+    "type": "communication / publicité",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-toulouse.com/mentions-legales"
+  },
+  {
+    "ville": "Tours",
+    "email": "ordre@barreaudetours.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.conferencedesbatonniers.com/fr/la-conference/les-barreaux-et-ordres?page=13"
+  },
+  {
+    "ville": "Troyes (Aube)",
+    "email": "batonnier@barreaudelaube.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.avocats-barreau-aube.fr/mentions-legales"
+  },
+  {
+    "ville": "Tulle",
+    "email": "ordretulle@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-tulle-ussel-ordre-avocats-19272-01.html"
+  },
+  {
+    "ville": "Valence (Drôme)",
+    "email": "contact@avocats26.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreaudeladrome.fr/contact/"
+  },
+  {
+    "ville": "Valenciennes",
+    "email": "ordre.valenciennes@wanadoo.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-valenciennes-ordre-avocats-59606-01.html"
+  },
+  {
+    "ville": "Vannes",
+    "email": "avocatsvannes@wanadoo.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-vannes-ordre-avocats-56260-01.html"
+  },
+  {
+    "ville": "Versailles",
+    "email": "exercicepro@avocats-versailles.com",
+    "type": "exercice professionnel",
+    "fiabilite": "site officiel",
+    "source": "https://www.barreaudeversailles.com/barreau/inscription/"
+  },
+  {
+    "ville": "Vesoul (Haute-Saône)",
+    "email": "ordredesavocatsvesoul@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://lannuaire.service-public.gouv.fr/bourgogne-franche-comte/haute-saone/7639b26d-3608-4764-94a4-7baedea1512a"
+  },
+  {
+    "ville": "Vienne",
+    "email": "ordredesavocats@oda-vienne.fr",
+    "type": "secrétariat général",
+    "fiabilite": "site officiel",
+    "source": "https://www.cours-appel.justice.fr/grenoble/avocats"
+  },
+  {
+    "ville": "Villefranche-sur-Saône",
+    "email": "barreau.villefranche@orange.fr",
+    "type": "secrétariat général",
+    "fiabilite": "source tierce",
+    "source": "https://www.annuaire-administration.com/ordre-avocats/ordre-des-avocats-barreau-de-villefranche-sur-saone-ordre-avocats-69264-01.html"
+  }
+]

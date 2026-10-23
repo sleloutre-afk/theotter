@@ -54,7 +54,7 @@ Pour un cabinet, les recherches utiles sont locales : « avocat droit pénal »
 
 Pour un cabinet d'avocats, nous avons livré un site vitrine avec prise de rendez-vous en ligne. Le projet pour H&F Gonder, cabinet spécialisé en droit immobilier et recouvrement, a été livré en 2 jours. Pour d'autres cabinets, dont les projets restent confidentiels, nous présentons le travail de façon anonymisée, conformément au secret professionnel.
 
-Pour aller plus loin, lisez aussi [Combien coûte un site vitrine en 2026 ?](/ressources/combien-coute-site-vitrine-2026) et [Qui possède vraiment votre site internet ?](/ressources/qui-possede-mon-site-internet).
+Pour aller plus loin, lisez aussi [Combien coûte un site vitrine en 2026 ?](/ressources/combien-coute-site-vitrine-2026), [Qui possède vraiment votre site internet ?](/ressources/qui-possede-mon-site-internet) et [Site internet d'avocat : l'information préalable à l'Ordre](/ressources/site-avocat-information-ordre).
 
 ## Sources
 
