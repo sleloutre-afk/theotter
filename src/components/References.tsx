@@ -105,7 +105,7 @@ export default function References() {
 
         <div
           ref={trackRef}
-          className="flex gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar -mx-6 px-6 pb-2"
+          className="flex gap-6 overflow-x-auto snap-x snap-mandatory no-scrollbar -mx-6 px-6 pt-2 pb-2"
         >
           {CASES.map((c, i) => {
             const isNamed = 'url' in c

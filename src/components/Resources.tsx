@@ -55,7 +55,7 @@ export default function Resources({ articles }: { articles: Article[] }) {
 
         <div
           ref={trackRef}
-          className="flex gap-5 overflow-x-auto snap-x snap-mandatory no-scrollbar -mx-6 px-6 pb-2"
+          className="flex gap-5 overflow-x-auto snap-x snap-mandatory no-scrollbar -mx-6 px-6 pt-2 pb-2"
         >
           {articles.map((a, i) => (
             <a
